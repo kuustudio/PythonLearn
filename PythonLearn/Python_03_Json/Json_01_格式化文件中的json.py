@@ -15,6 +15,8 @@ def formatjson(get_content):
 
 
 class ReadFile(object):
+    json_data = None
+
     def __init__(self, filename):
         self.filename = filename
 
@@ -22,11 +24,19 @@ class ReadFile(object):
     def get_content(self):
         f = open(self.filename, 'r', encoding="UTF-8")
         file_content = f.read()
+        ReadFile.json_data = file_content
         return file_content
+
+    @formatjson
+    def get_json_to_str(self) -> str:
+        result = json.dumps(self.json_data, ensure_ascii=False, indent=4, skipkeys=True, sort_keys=True,
+                            separators=(",",":"))
+        return result
 
 
 if __name__ == '__main__':
     a = ReadFile(file)
     c = a.get_content()
-
-
+    print(c)
+    b = a.get_json_to_str()
+    print(b)
