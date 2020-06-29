@@ -7,6 +7,7 @@
     AssertionError  斷言失敗
     AttributeError  找不到屬性
     ValueError      “参数值不正确（类型正确）。”
+    WindowsError    "WindowsError/(OSError,IOError,EnvironmentError),I/O相关错误"
 
 # 拓展 traceback
     traceback
