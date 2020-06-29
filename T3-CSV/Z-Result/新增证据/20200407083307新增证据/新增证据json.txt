@@ -1,0 +1,13 @@
+{
+    "brzly": "${brzly}",
+    "rzly": "${rzly}",
+    "sfkjh": "${sfkjh}",
+    "sfrz": "${sfrz}",
+    "sfyjyw": "${sfyjyw}",
+    "sfyqtg": "${sfyqtg}",
+    "sfzz": "${sfzz}",
+    "sx": "${sx}",
+    "zjlx": "${zjlx}",
+    "ywlx": "${ywlx}",
+    "jbfy": "${jbfy}"
+}

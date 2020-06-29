@@ -1,0 +1,16 @@
+{
+    "bgkslsy": "${bgkslsy}",
+    "gksl": "${gksl}",
+    "sftqyztjswh": "${sftqyztjswh}",
+    "sfzyfghy": "${sfzyfghy}",
+    "slfs": "${slfs}",
+    "splcbgkyy": "${splcbgkyy}",
+    "splcgk": "${splcgk}",
+    "ywlx": "${ywlx}",
+    "jbfy": "${jbfy}",
+    "sysfydm": "${sysfydm}",
+    "tjgxfydm": "${tjgxfydm}",
+    "cbspt": "${cbspt}",
+    "cbr": "${cbr}",
+    "faqrr": "${faqrr}"
+}

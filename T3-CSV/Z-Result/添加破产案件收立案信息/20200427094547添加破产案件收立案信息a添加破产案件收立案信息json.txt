@@ -1,0 +1,20 @@
+{
+    "cdysbysy": "${cdysbysy}",
+    "gxyj": "${gxyj}",
+    "lascyj": "${lascyj}",
+    "laspyj": "${laspyj}",
+    "saly": "${saly}",
+    "satj": "${satj}",
+    "sayj": "${sayj}",
+    "sdzl": "${sdzl}",
+    "sqsx": "${sqsx}",
+    "sqsy": "${sqsy}",
+    "ssjddx": "${ssjddx}",
+    "ssyy": "${ssyy}",
+    "syxessqj": "${syxessqj}",
+    "zdfalx": "${zdfalx}",
+    "ywlx": "${ywlx}",
+    "jbfy": "${jbfy}",
+    "labmbs": "${labmbs}",
+    "laspr": "${laspr}"
+}

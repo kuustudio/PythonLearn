@@ -1,0 +1,11 @@
+{
+    "ajdxyx": "${ajdxyx}",
+    "ajsj": "${ajsj}",
+    "jgaj": "${jgaj}",
+    "sfta": "${sfta}",
+    "sgatqx": "${sgatqx}",
+    "sjgbhdq": "${sjgbhdq}",
+    "swqx": "${swqx}",
+    "ywlx": "${ywlx}",
+    "jbfy": "${jbfy}"
+}

@@ -1,0 +1,11 @@
+{
+    "jafs": "${jafs}",
+    "jaws": "${jaws}",
+    "zjpocxsy": "${zjpocxsy}",
+    "zjqzqscxsy": "${zjqzqscxsy}",
+    "ywlx": "${ywlx}",
+    "jbfy": "${jbfy}",
+    "sysfydm": "${sysfydm}",
+    "tjgxfydm": "${tjgxfydm}",
+    "zlshlfydm": "${zlshlfydm}"
+}
