@@ -22,7 +22,7 @@ print("方法：json.loads()\n"
 如果“确保ascii”为false，则返回值可以包含非ascii
 
 字符，如果它们出现在“obj”中包含的字符串中。否则，所有
-fa756068b83047729640bf8a2233dc94 8e8a8f8deacc448dbad8de962cc24674
+
 这些字符在JSON字符串中转义。
 
 
