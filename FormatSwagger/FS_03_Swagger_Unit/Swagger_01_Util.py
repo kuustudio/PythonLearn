@@ -7,15 +7,29 @@ import re
 
 def especial_server(server_list) -> list:
     #   行政的api docs 需要特殊处理
-    for i in server_list:
+    for address in server_list:
+        i = address.get("swagger_address")
+        p = address.get("swagger_name")
         if ':30127' in i:
-            server_list.remove(i)
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=司法制裁案件相关接口')
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=破产案件相关接口')
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=案件服务公用接口')
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=管辖案件相关接口')
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=行政案件相关接口')
-            server_list.append('http://172.18.15.163:30127/v2/api-docs?group=赔偿案件相关接口')
+            server_list.remove(address)
+            server_list.append({'swaggger_name':'司法制裁案件',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=司法制裁案件相关接口'})
+            server_list.append({'swaggger_name':'破产案件',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=破产案件相关接口'})
+            server_list.append({'swaggger_name':'案件公用',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=案件服务公用接口'})
+            server_list.append({'swaggger_name':'管辖案件',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=管辖案件相关接口'})
+            server_list.append({'swaggger_name':'行政案件',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=行政案件相关接口'})
+            server_list.append({'swaggger_name':'赔偿案件',
+                                'swagger_address':'http://172.18.15.163:30127/v2/api-docs?group=赔偿案件相关接口'})
+            break
+    for J in server_list:
+        if ':30101' in J['swagger_address']:
+            server_list.remove(J)
+            server_list.append({'swaggger_name':'诉讼参与人',
+                                'swagger_address':'http://172.18.15.163:30101/v2/api-docs?group=all'})
             break
     return server_list
 
@@ -33,10 +47,11 @@ def get_test_swagger_address():
         if server_name is None:
             for one_swagger_address in swagger_address_data:
                 if 'swagger-ui.html' in one_swagger_address['中台联调环境（2.13更新）']:
+                    name = one_swagger_address['名称']
                     for one_key in one_swagger_address:
                         if config_02_system_content.Content.evn_name in one_key:
                             swagger_address = one_swagger_address[one_key]
-                            result.append(swagger_address)
+                            result.append({"swagger_address":swagger_address,'swagger_name':name})
                         # result = swagger_address.replace(comment_field.swagger_html, comment_field.swagger_docs)
         else:
             for one_swagger_address in swagger_address_data:
@@ -44,7 +59,7 @@ def get_test_swagger_address():
                     for one_key in one_swagger_address:
                         if config_02_system_content.Content.evn_name in one_key:
                             swagger_address = one_swagger_address[one_key]
-                            result.append(swagger_address)
+                            result.append({"swagger_address":swagger_address,'swagger_name':one_swagger_address['名称']})
     except TypeError as e:
         return "获取swagger地址错误"
     return result
@@ -63,17 +78,19 @@ def get_require_field(parameters_list, *args):
     return result, finally_bean
 
 
-def get_swagger_data(address):
+def get_swagger_data(address,name):
     global api_name
     comment_field = config_02_system_content.Content()
     result_list = []
     swagger_info = T3_04_ResuitMethod.send_get_request(address)
     paths_info = swagger_info['paths']
+    api_num = len(paths_info)
     for i in paths_info:
         try:
             method = list(dict(paths_info[i]).keys())[0]
-            result_dict = {'api': i, 'method': method}
+            result_dict = {'api': i, 'method': method,'swagger_name':name}
             api_name = paths_info[i][method]['summary']
+            controller = paths_info[i][method]['tags']
             parameters = paths_info[i][method]['parameters']
             require_list = get_require_field(parameters, 'dto', 'vo')
             if require_list[0]:
@@ -81,6 +98,8 @@ def get_swagger_data(address):
             if require_list[1]:
                 result_dict.update({'DTO/VO': require_list[1]})
             result_dict['api_name'] = api_name
+            if controller[0]:
+                result_dict['controller'] = controller[0]
             #   获取测试接口的swagger data
             if not comment_field.api_name_list:
                 result_list.append(result_dict)
@@ -90,7 +109,7 @@ def get_swagger_data(address):
         except KeyError as e:
             print("获取swagger数据失败,失败的原因是 服务：[%s],失败的接口是[%s],失败的原因是实体类中没有key值[%s]"
                   % (address, api_name, e))
-    return result_list
+    return result_list,api_num
 
 
 def get_test_definitions_info(test_api_list, definitions_info):

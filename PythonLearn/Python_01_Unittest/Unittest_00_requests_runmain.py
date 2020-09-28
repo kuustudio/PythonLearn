@@ -19,12 +19,16 @@ class RunMain():
 
     def send_get(self):
         print(self.get)
-        res = requests.get(url=self.url, data=self.data).json()
+        res = requests.get(url=self.url, params=self.data).json()
         return res
 
     def send_post(self):
         print(self.post)
         res = requests.post(url=self.url, data=self.data).json()
+        return res
+
+    def send_delete(self):
+        res = requests.delete(url=self.url, params=self.data).json()
         return res
 
     def run_main(self):
@@ -33,9 +37,17 @@ class RunMain():
             result = self.send_get()
         if self.method == "post":
             result = self.send_post()
+        if self.method == "delete":
+            result = self.send_delete()
         return result
 
 
 if __name__ == '__main__':
-    url = 'http://172.18.15.197:30101/v2/api-docs'
-    my_request = RunMain(url, method="get", data=None)
+    url = 'http://172.18.15.163:30127/api/v1/qjsfxzaj'
+    data = {
+        'bhAj': ['fb039c4d67e341c68bc0e768cfc11111', 'fb039c4d67e341c68bc0e768cfc22222'],
+        'jbfy': '2400'
+    }
+    my_request = RunMain(url, method="get",data=data)
+    a = my_request.run_main()
+    print(a)
