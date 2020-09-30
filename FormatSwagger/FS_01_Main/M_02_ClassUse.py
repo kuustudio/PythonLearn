@@ -3,6 +3,7 @@ from FS_99_Util import Util_01_xlrd
 from FS_03_Swagger_Unit import Swagger_01_Util
 from FS_05_Mongodb import Mongodb_client
 
+
 def get_test_swagger_address():
     result = None
     new = None
@@ -18,7 +19,7 @@ def get_test_swagger_address():
                     if config_02_system_content.Content.evn_name in one_key:
                         swagger_address = one_swagger_address[one_key]
                         result = swagger_address.replace(comment_field.swagger_html, comment_field.swagger_docs)
-                        new = result.replace(comment_field.dev_swagger_ip,comment_field.swagger_ip)
+                        new = result.replace(comment_field.dev_swagger_ip, comment_field.swagger_ip)
     except TypeError as e:
         return "获取swagger地址错误"
     return new
@@ -43,7 +44,7 @@ class CallRule(object):
                 CallRule.error_swagger_data = one
 
                 swagger_docs_address = one.replace(comment_field.swagger_html, comment_field.swagger_docs)
-                without_bean_data = Swagger_01_Util.get_swagger_data(swagger_docs_address,swagger_name)
+                without_bean_data = Swagger_01_Util.get_swagger_data(swagger_docs_address, swagger_name)
                 num += without_bean_data[1]
                 Test_bean_info = Swagger_01_Util.get_server_bean_info(without_bean_data[0], swagger_docs_address)
 
@@ -61,4 +62,3 @@ class CallRule(object):
 
 if __name__ == '__main__':
     CallRule().main()
-

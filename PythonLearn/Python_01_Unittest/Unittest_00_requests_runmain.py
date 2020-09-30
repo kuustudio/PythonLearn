@@ -1,10 +1,15 @@
 import requests
 import json
+from Python_04_函数 import RandomData
+import random
+import numpy as np
 
 
 # 定义 requests 请求的主方法
 
 class RunMain():
+    headers = {"Content-Type": "application/json"}
+
     # 定义初始化方法
     def __init__(self, Url, data, method):
         self.post = "发送Post请求..."
@@ -24,7 +29,7 @@ class RunMain():
 
     def send_post(self):
         print(self.post)
-        res = requests.post(url=self.url, data=self.data).json()
+        res = requests.post(url=self.url, data=json.dumps(self.data), headers=self.headers).json()
         return res
 
     def send_delete(self):
@@ -43,11 +48,14 @@ class RunMain():
 
 
 if __name__ == '__main__':
-    url = 'http://172.18.15.163:30127/api/v1/qjsfxzaj'
+    url = 'http://172.18.4.211:30100/api/v1/msajpczrxzjjsl'
     data = {
-        'bhAj': ['fb039c4d67e341c68bc0e768cfc11111', 'fb039c4d67e341c68bc0e768cfc22222'],
-        'jbfy': '2400'
+        "bzjse": RandomData.RandomData().INTRandomData(4,4),
+        "bhAj": "50bfd418cdf34702845b25ef4d59824d",
+        "jbfy": "2400",
+        "ywlx": "0301"
     }
-    my_request = RunMain(url, method="get",data=data)
+    print(data)
+    my_request = RunMain(url, method="post", data=data)
     a = my_request.run_main()
     print(a)
