@@ -1,0 +1,224 @@
+2020-12-26 13:56:23,657 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"行政处理复议-clfy",
+  "c_source_bm":"T_XZ_CLFY",
+  "c_source_dzdm":"10104020",
+  "c_source_jtmz":"255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,658 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_CLFY AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 1",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '1'"
+}
+2020-12-26 13:56:23,658 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,658 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,658 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,667 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"行政处理复议-clfy",
+  "c_source_bm":"T_XZ_CLFY",
+  "c_source_dzdm":"10104020",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,667 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_CLFY AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 2",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '2'"
+}
+2020-12-26 13:56:23,667 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,667 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,668 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,681 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"行政处理复议-clfy",
+  "c_source_bm":"T_XZ_CLFY",
+  "c_source_dzdm":"10104020",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,682 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_CLFY AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 4",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '3'"
+}
+2020-12-26 13:56:23,682 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,682 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,682 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,692 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"行政处理复议-clfy",
+  "c_source_bm":"T_XZ_CLFY",
+  "c_source_dzdm":"10104020",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,692 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_CLFY AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 5",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '6'"
+}
+2020-12-26 13:56:23,693 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,693 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,693 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,701 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"行政处理复议-clfy",
+  "c_source_bm":"T_XZ_CLFY",
+  "c_source_dzdm":"10104020",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,701 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_CLFY AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 255",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '255'"
+}
+2020-12-26 13:56:23,701 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,701 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,702 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,715 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"赔偿处理复议-clfy",
+  "c_source_bm":"T_PC_CLFY",
+  "c_source_dzdm":"10107002",
+  "c_source_jtmz":"255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,715 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_CLFY AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 1",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '1'"
+}
+2020-12-26 13:56:23,715 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,715 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,715 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,723 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"赔偿处理复议-clfy",
+  "c_source_bm":"T_PC_CLFY",
+  "c_source_dzdm":"10107002",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,724 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_CLFY AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 2",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '2'"
+}
+2020-12-26 13:56:23,724 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,724 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,724 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:23,732 - root - DEBUG - 1 - {
+  "c_group":"处理复议",
+  "c_ms":"clfy",
+  "c_sheet_mc":"赔偿处理复议-clfy",
+  "c_source_bm":"T_PC_CLFY",
+  "c_source_dzdm":"10107002",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LX",
+  "c_system_type":"np",
+  "c_target_bm":"T_CLFY",
+  "c_target_dzdm":"11401353",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:23,733 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_CLFY AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_LX = 255",
+  "targetDB":"select count(*) as data_count from clfy.T_CLFY  where dt_cjsj<'2020-12-05' AND C_FYLX = '255'"
+}
+2020-12-26 13:56:23,733 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:23,733 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:23,733 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

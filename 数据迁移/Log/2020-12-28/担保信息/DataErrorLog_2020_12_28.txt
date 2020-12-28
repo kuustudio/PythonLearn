@@ -1,0 +1,196 @@
+2020-12-28 09:30:45,253 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":"7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,265 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '1'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{1}'"
+}
+2020-12-28 09:30:45,265 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,265 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,265 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,316 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,316 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '2'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{2}'"
+}
+2020-12-28 09:30:45,316 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,317 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,317 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,324 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,324 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '3'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{3}'"
+}
+2020-12-28 09:30:45,324 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,324 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,324 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,331 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,331 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '4'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{4}'"
+}
+2020-12-28 09:30:45,331 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,331 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,331 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,341 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '4'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{4}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,341 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '5'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{5}'"
+}
+2020-12-28 09:30:45,341 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,341 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,341 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,349 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '5'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{5}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,350 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '6'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{6}'"
+}
+2020-12-28 09:30:45,350 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,350 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,350 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:45,358 - root - DEBUG - 1 - {
+  "c_group":"担保信息",
+  "c_ms":"dbxx",
+  "c_sheet_mc":"行政担保-dbxx",
+  "c_source_bm":"T_XZ_XYZX_SSDB",
+  "c_source_dzdm":"10101007",
+  "c_source_jtmz":" '6'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_DBFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DB",
+  "c_target_dzdm":"11401347",
+  "c_target_jtmz":" '{6}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_DBFS",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,358 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_XYZX_SSDB AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  ywb.C_DBFS IS NOT NULLAND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_DBFS = '7'",
+  "targetDB":"select count(*) as data_count from dbxx.T_DB  where dt_cjsj<'2020-12-05' AND C_DBFS = '{255}'"
+}
+2020-12-28 09:30:45,358 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:45,358 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:45,358 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40" xml:lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Rapiscal2_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Rapiscal2_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>API Functions</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Shou-yen Joseph Teng</o:Author>
+  <o:LastAuthor>Shou-yen Joseph Teng</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2003-09-04T21:20:00Z</o:Created>
+  <o:LastSaved>2003-09-04T22:13:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>336</o:Words>
+  <o:Characters>1918</o:Characters>
+  <o:Company>Sybase, Inc.</o:Company>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2355</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=document.css>
+<link rel=Stylesheet type="text/css" media=all href=catalog.css>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Batang;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.pbody, li.pbody, div.pbody
+	{mso-style-name:pbody;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pbodybold, li.pbodybold, div.pbodybold
+	{mso-style-name:pbodybold;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:#003366;
+	font-weight:bold;}
+p.pbodyindent12pxbeforeafter, li.pbodyindent12pxbeforeafter, div.pbodyindent12pxbeforeafter
+	{mso-style-name:pbodyindent12pxbeforeafter;
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pbodyrelative, li.pbodyrelative, div.pbodyrelative
+	{mso-style-name:pbodyrelative;
+	margin-top:4.5pt;
+	margin-right:0in;
+	margin-bottom:4.5pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pbodyrelativesub, li.pbodyrelativesub, div.pbodyrelativesub
+	{mso-style-name:pbodyrelativesub;
+	margin-top:4.5pt;
+	margin-right:0in;
+	margin-bottom:4.5pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindented1, li.pindented1, div.pindented1
+	{mso-style-name:pindented1;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:30.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindented2, li.pindented2, div.pindented2
+	{mso-style-name:pindented2;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:60.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindented3, li.pindented3, div.pindented3
+	{mso-style-name:pindented3;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.25in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindented4, li.pindented4, div.pindented4
+	{mso-style-name:pindented4;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:120.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindented5, li.pindented5, div.pindented5
+	{mso-style-name:pindented5;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:150.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.pindentedrelative, li.pindentedrelative, div.pindentedrelative
+	{mso-style-name:pindentedrelative;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:30.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.plevel1ix, li.plevel1ix, div.plevel1ix
+	{mso-style-name:plevel1ix;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:30.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.plevel2ix, li.plevel2ix, div.plevel2ix
+	{mso-style-name:plevel2ix;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:60.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.plevel3ix, li.plevel3ix, div.plevel3ix
+	{mso-style-name:plevel3ix;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.25in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.plevel4ix, li.plevel4ix, div.plevel4ix
+	{mso-style-name:plevel4ix;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:120.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.plevel5ix, li.plevel5ix, div.plevel5ix
+	{mso-style-name:plevel5ix;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:150.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.psyntaxembed, li.psyntaxembed, div.psyntaxembed
+	{mso-style-name:psyntaxembed;
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Batang;
+	color:black;}
+p.ptoc2, li.ptoc2, div.ptoc2
+	{mso-style-name:ptoc2;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:30.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;
+	font-weight:bold;}
+p.ptoc3, li.ptoc3, div.ptoc3
+	{mso-style-name:ptoc3;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:60.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;
+	font-weight:bold;}
+p.ptoc4, li.ptoc4, div.ptoc4
+	{mso-style-name:ptoc4;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:1.25in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;
+	font-weight:bold;}
+p.ptoc5, li.ptoc5, div.ptoc5
+	{mso-style-name:ptoc5;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:120.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;
+	color:black;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/context.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/towwhdir.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/wwhpagef.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta http-equiv=Content-Style-Type content="text/css">
+<meta name=TEMPLATEBASE content="WWH 3.0 Help Template">
+<meta name=LASTUPDATED content="02/20/03 12:22:48">
+</head>
+
+<body bgcolor="#ffffee" lang=EN-US link=blue vlink=blue style='tab-interval:
+.5in' onload="WWHUpdate();">
+
+<div class=Section1>
+
+<h1 style='margin-right:.5in;margin-left:.5in'><a name=wp938></a><span lang=EN
+style='font-size:19.5pt;font-family:Arial;color:#003366;mso-ansi-language:EN'>API
+Functions <o:p></o:p></span></h1>
+
+
+<div class=MsoNormal align=center style='margin-right:.5in;margin-top:5.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:center'><span lang=EN
+style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp952></a><span
+lang=EN style='mso-ansi-language:EN'>All Sybase ASE ODBC Drivers are ODBC Level
+1&#8211;compliant&#8212;they support all ODBC Core and Level 1 functions. They also support
+a limited set of Level 2 functions. The drivers support the functions listed in
+<a href="Rapiscal2.html#wp3092">Table&nbsp;B-1</a> and <a
+href="Rapiscal2.html#wp6716">Table&nbsp;B-2</a>. Any additions to these
+supported functions or differences in the support of specific functions are
+listed in the &quot;ODBC Conformance Level&quot; section in the individual
+driver topics. <o:p></o:p></span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:.5in;
+ mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:Arial;
+  color:black'>Table B-1. Function Conformance for 2.x ODBC Applications <a
+  name=wp3092></a><a name=wp3149></a><o:p></o:p></span></i></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:Arial;color:black'>Core Functions <a
+  name=wp3096></a><o:p></o:p></span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:Arial;color:black'>Level 1 Functions <a
+  name=wp3098></a><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLAllocConnect
+  <a name=wp3100></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLAllocEnv
+  <a name=wp3101></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLAllocStmt
+  <a name=wp3102></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBindCol
+  <a name=wp3103></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBindParameter
+  <a name=wp3104></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLCancel
+  <a name=wp3105></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLColAttributes
+  <a name=wp3106></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLConnect
+  <a name=wp3107></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDescribeCol
+  <a name=wp3108></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDisconnect
+  <a name=wp3109></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDrivers
+  <a name=wp3110></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLError
+  <a name=wp3111></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExecDirect
+  <a name=wp3112></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExecute
+  <a name=wp3113></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFetch
+  <a name=wp3114></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFreeCon<a
+  name=wp3115></a>nect <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFreeEnv
+  <a name=wp3116></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFreeStmt
+  <a name=wp3117></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetCursorName
+  <a name=wp3118></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLNumResultCols
+  <a name=wp3119></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLPrepare
+  <a name=wp3120></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLRowCount
+  <a name=wp3121></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetCursorName
+  <a name=wp3122></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLTransact
+  <a name=wp3123></a><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLColumns
+  <a name=wp3125></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDriverConnect
+  <a name=wp3126></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetConnectOption
+  <a name=wp3127></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetData
+  <a name=wp3128></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetFunctions
+  <a name=wp3129></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetInfo
+  <a name=wp3130></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetStmtOption
+  <a name=wp3131></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetTypeInfo
+  <a name=wp3132></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLParamData
+  <a name=wp3133></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLPutData
+  <a name=wp3134></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetConnectOption
+  <a name=wp3135></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetStmtOption
+  <a name=wp3136></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSpecialColumns
+  <a name=wp3137></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLStatistics
+  <a name=wp3138></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLTables
+  <a name=wp3139></a><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:Arial;color:black'>Level 2 Functions <a
+  name=wp3140></a><o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBrowseConnect
+  (all drivers except PROGRESS) <a name=wp3141></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDataSources
+  <a name=wp3142></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExtendedFetch
+  (forward scrolling only) <a name=wp3143></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLMoreResults
+  <a name=wp3144></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLN<a
+  name=wp3145></a>ativeSql <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLNumParams
+  <a name=wp3146></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLParamOptions
+  <a name=wp3147></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetScrollOptions
+  <a name=wp3148></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt'><a name=wp6776></a><span lang=EN
+style='display:none;mso-hide:all;mso-ansi-language:EN'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:.5in;
+ mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:Arial;
+  color:black'>Table B-2. Function Conformance for 3.x ODBC Applications <a
+  name=wp6716></a><o:p></o:p></span></i></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLAllocHandle
+  <a name=wp6720></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBindCol
+  <a name=wp6721></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBindParameter
+  <a name=wp6722></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBrowseConnect<br>
+  <a name=wp9365></a>(except for PROGRESS) <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLBulkOperations
+  <a name=wp6724></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLCancel
+  <a name=wp6725></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLCloseCursor
+  <a name=wp6726></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLColAttribute
+  <a name=wp6727></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLColumns
+  <a name=wp6728></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLConnect
+  <a name=wp6729></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLCopyDesc
+  <a name=wp6730></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDataSources
+  <a name=wp6731></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDescribeCol
+  <a name=wp6732></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDisconnect
+  <a name=wp6733></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDriverConnect
+  <a name=wp6734></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLDrivers
+  <a name=wp6735></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLEndTran
+  <a name=wp6736></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLError
+  <a name=wp6737></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExecDirect
+  <a name=wp6738></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExecute
+  <a name=wp6739></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLExtendedFetch
+  <a name=wp6740></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFetch
+  <a name=wp6741></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFetchScroll
+  <br>
+  <a name=wp6742></a>(forward scrolling only) <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFreeHandle
+  <a name=wp6743></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLFreeStmt
+  <a name=wp6744></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetConnectAttr
+  <a name=wp6745></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetCursorName
+  <a name=wp6746></a><o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetData
+  <a name=wp6748></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetDescField
+  <a name=wp6749></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetDescRec
+  <a name=wp6750></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetDiagField
+  <a name=wp6751></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetDiagRec
+  <a name=wp6752></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetEnvAttr
+  <a name=wp6753></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetFunctions
+  <a name=wp6754></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetInfo
+  <a name=wp6755></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetStmtAttr
+  <a name=wp6756></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLGetTypeInfo
+  <a name=wp6757></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLMoreResults
+  <a name=wp6758></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLNativeSql
+  <a name=wp6759></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLNumParens
+  <a name=wp6760></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLNumResultCols
+  <a name=wp6761></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLParamData
+  <a name=wp6762></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLPrepare
+  <a name=wp6763></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLPutData
+  <a name=wp6764></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLRowCount
+  <a name=wp6765></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetConnectAttr
+  <a name=wp6766></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetCursorName
+  <a name=wp6767></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetDescField
+  <a name=wp6768></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetDescRec
+  <a name=wp6769></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetEnvAttr
+  <a name=wp6770></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSetStmtAttr
+  <a name=wp6771></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLSpecialColumns
+  <a name=wp6772></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLStatistics
+  <a name=wp6773></a><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLTables<a
+  name=wp6774></a> <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQLTransact
+  <a name=wp6775></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+
+<div class=MsoNormal align=center style='text-align:center'><span lang=EN
+style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=MsoNormal><script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+</script></p>
+
+</div>
+
+</body>
+
+</html>

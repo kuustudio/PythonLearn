@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Main-Class: com.sybase.jdbc3.jdbc.SybDriver
+Created-By: 1.2fcs (Sun Microsystems Inc.)
+
+Name: com/sybase/jdbc3/jdbc
+Specification-Title: "jConnect for JDBC 3.0" 
+Implementation-Version: "Build (25308)"
+Specification-Vendor: "Sybase, Inc."
+Specification-Version: "6.0"
+Implementation-Title: "com.sybase.jdbc3.jdbc" 
+Implementation-Vendor: "Sybase, Inc."
+
+Name: com/sybase/jdbc3/utils
+Specification-Title: "jConnect for JDBC 3.0" 
+Implementation-Version: "Build (25308)"
+Specification-Vendor: "Sybase, Inc."
+Specification-Version: "6.0"
+Implementation-Title: "com.sybase.jdbc3.utils" 
+Implementation-Vendor: "Sybase, Inc."
+
+Name: com/sybase/jdbc3/tds
+Specification-Title: "jConnect for JDBC 3.0" 
+Implementation-Version: "Build (25308)"
+Specification-Vendor: "Sybase, Inc."
+Specification-Version: "6.0"
+Implementation-Title: "com.sybase.jdbc3.tds" 
+Implementation-Vendor: "Sybase, Inc."
+
+Name: com/sybase/jdbcx/
+Specification-Title: "jConnect for JDBC 3.0" 
+Specification-Vendor: "Sybase, Inc."
+Implementation-Vendor: "Sybase, Inc."
+Specification-Version: "6.0"
+Implementation-Version: "Build (25308)"
+Implementation-Title: "com.sybase.jdbcx" 
+
+Name: com/sybase/jdbc3/timedio
+Specification-Title: "jConnect for JDBC 3.0" 
+Implementation-Version: "Build (25308)"
+Specification-Vendor: "Sybase, Inc."
+Specification-Version: "6.0"
+Implementation-Title: "com.sybase.jdbc3.timedio" 
+Implementation-Vendor: "Sybase, Inc."
+

@@ -1,0 +1,10 @@
+2020-12-26 13:56:18,037 - root - INFO - 2 - T3C表名test.t_spzzcy_target,字段名c_ywlx,码值 '0301',NP表名test.t_aj_jc_source,字段名c_ywlx,码值 '30100',
+2020-12-26 13:56:18,038 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:18,038 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:56:18,045 - root - INFO - 2 - T3C表名test.t_spzzcy_target,字段名c_ywlx,码值 '0302',NP表名test.t_aj_jc_source,字段名c_ywlx,码值 '30200',
+2020-12-26 13:56:18,045 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:18,045 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================

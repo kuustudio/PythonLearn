@@ -1,0 +1,40 @@
+2020-12-28 09:31:27,155 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_ZXFS,码值 '1',NP表名T_XS_ZYXZXQK,字段名N_ZXFS,码值 1,
+2020-12-28 09:31:27,155 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,155 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,175 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_ZXFS,码值 '2',NP表名T_XS_ZYXZXQK,字段名N_ZXFS,码值 2,
+2020-12-28 09:31:27,175 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,175 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,187 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_ZXFS,码值 '3',NP表名T_XS_ZYXZXQK,字段名N_ZXFS,码值 3,
+2020-12-28 09:31:27,187 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,187 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,204 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_JWZXYY,码值 '1',NP表名T_XS_ZYXZXQK,字段名N_JWZXYY,码值 1,
+2020-12-28 09:31:27,204 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,204 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,216 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_JWZXYY,码值 '3',NP表名T_XS_ZYXZXQK,字段名N_JWZXYY,码值 3,
+2020-12-28 09:31:27,217 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,217 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,232 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_JWZXYY,码值 '2',NP表名T_XS_ZYXZXQK,字段名N_JWZXYY,码值 2,
+2020-12-28 09:31:27,232 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,232 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,249 - root - INFO - 2 - T3C表名T_PJZXQK_ZYXZXQK,字段名C_JWZXYY,码值 '2',NP表名T_XS_ZYXZXQK,字段名N_JWZXYY,码值 4,
+2020-12-28 09:31:27,249 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,249 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-28 09:31:27,295 - root - INFO - 2 - T3C表名T_PJZXQK_PJCLQK,字段名C_CCXLX,码值 '{1}',NP表名T_XS_BGR,字段名C_CCXLX,码值 '1',
+2020-12-28 09:31:27,295 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:31:27,295 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================

@@ -1,0 +1,698 @@
+2020-12-28 09:30:45,939 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_XS_BGR",
+  "c_source_dzdm":"10102094",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGRZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401655",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGRZT",
+  "lx":"Single"
+}
+2020-12-28 09:30:45,939 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_XS_BGR AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_BGRLX IN (1,2,3)  AND ywb.N_BGRZT != null AND  aj.N_YWLX !=20801AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGRZT = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_BGRZT = '1' and 'C_BH' ='410c72ad317347c2b644c4f34e9deab8'"
+}
+2020-12-28 09:30:45,939 - root - INFO - 2 - T3C.T_DZLX_JC表中没有找到与NP.T_XS_BGR表中编号为410c72ad317347c2b644c4f34e9deab8的数据 请检查上方SQL是否正确
+2020-12-28 09:30:45,939 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:30:45,939 - root - ERROR - 2 - 
+T3C.T_DZLX_JC表中没有找到与NP.T_XS_BGR表中编号为410c72ad317347c2b644c4f34e9deab8的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:30:46,038 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_XS_BGR",
+  "c_source_dzdm":"10102094",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGRZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401655",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGRZT",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,038 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_XS_BGR AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_BGRLX IN (1,2,3)  AND ywb.N_BGRZT != null AND  aj.N_YWLX !=20801AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGRZT = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_BGRZT = '3' and 'C_BH' ='8259CDFDBBB244529E38703687464E02'"
+}
+2020-12-28 09:30:46,038 - root - INFO - 2 - T3C.T_DZLX_JC表中没有找到与NP.T_XS_BGR表中编号为8259CDFDBBB244529E38703687464E02的数据 请检查上方SQL是否正确
+2020-12-28 09:30:46,038 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:30:46,038 - root - ERROR - 2 - 
+T3C.T_DZLX_JC表中没有找到与NP.T_XS_BGR表中编号为8259CDFDBBB244529E38703687464E02的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:30:46,161 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"101510095",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_ZZSLLY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401656",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZZSLLY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,161 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_ZZSLLY = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_ZZSLLY = '1'"
+}
+2020-12-28 09:30:46,161 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,161 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,161 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,169 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"101510095",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_ZZSLLY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401656",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZZSLLY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,170 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_ZZSLLY = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_ZZSLLY = '2'"
+}
+2020-12-28 09:30:46,170 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,170 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,170 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,184 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"101510096",
+  "c_source_jtmz":"255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_ZHZSLLY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401428",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZHZSLLY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,185 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_ZHZSLLY = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_ZHZSLLY = '1'"
+}
+2020-12-28 09:30:46,185 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,185 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,185 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,192 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"101510096",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_ZHZSLLY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401428",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZHZSLLY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,192 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_ZHZSLLY = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_ZHZSLLY = '2'"
+}
+2020-12-28 09:30:46,192 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,193 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,193 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,200 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"101510096",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_ZHZSLLY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401428",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZHZSLLY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,200 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_ZHZSLLY = 255",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_ZHZSLLY = '255'"
+}
+2020-12-28 09:30:46,200 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,200 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,200 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,210 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"10102085",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_WCHGP",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401657",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_WCHGP",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,210 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_WCHGP = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_WCHGP = '1'"
+}
+2020-12-28 09:30:46,210 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,210 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,210 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,229 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑基本信息-sscyr",
+  "c_source_bm":"T_ZSSC_BGR",
+  "c_source_dzdm":"10102085",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_WCHGP",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_JC",
+  "c_target_dzdm":"11401657",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_WCHGP",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,230 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_BGR AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (20301,20302,20303) AND  ywb.N_BGRLX IN (1,2,3) AND  ywb.N_PJQK != nullAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_WCHGP = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_JC  where dt_cjsj<'2020-12-05' AND C_WCHGP = '2'"
+}
+2020-12-28 09:30:46,230 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,230 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,230 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,248 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑信息-sscyr",
+  "c_source_bm":"T_ZSSC_DZLXXX",
+  "c_source_dzdm":"10102036",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XGWZYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400170",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XGWZSY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,248 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX IN (20301,20302,20303)  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XGWZYY = 255",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_XGWZSY = '255'"
+}
+2020-12-28 09:30:46,249 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,249 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,249 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,255 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑信息-sscyr",
+  "c_source_bm":"T_ZSSC_DZLXXX",
+  "c_source_dzdm":"10102036",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XGWZYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400170",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XGWZSY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,255 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX IN (20301,20302,20303)  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XGWZYY = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_XGWZSY = '1'"
+}
+2020-12-28 09:30:46,255 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,255 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,255 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,262 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事再审审查定罪量刑信息-sscyr",
+  "c_source_bm":"T_ZSSC_DZLXXX",
+  "c_source_dzdm":"10102036",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XGWZYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400170",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XGWZSY",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,262 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX IN (20301,20302,20303)  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XGWZYY = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_XGWZSY = '2'"
+}
+2020-12-28 09:30:46,262 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,262 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,262 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,273 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑信息-sscyr",
+  "c_source_bm":"T_XS_DZLXXX",
+  "c_source_dzdm":"10102037",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BFXSZRYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400171",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BFXSZRQX",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,273 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX !=20801  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BFXSZRYY = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BFXSZRQX = '{3}'"
+}
+2020-12-28 09:30:46,273 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,273 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,273 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,279 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑信息-sscyr",
+  "c_source_bm":"T_XS_DZLXXX",
+  "c_source_dzdm":"10102037",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BFXSZRYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400171",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BFXSZRQX",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,280 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX !=20801  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BFXSZRYY = 4",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BFXSZRQX = '{4}'"
+}
+2020-12-28 09:30:46,280 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,280 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,280 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,286 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑信息-sscyr",
+  "c_source_bm":"T_XS_DZLXXX",
+  "c_source_dzdm":"10102037",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BFXSZRYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400171",
+  "c_target_jtmz":" '{4}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BFXSZRQX",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,286 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX !=20801  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BFXSZRYY = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BFXSZRQX = '{1}'"
+}
+2020-12-28 09:30:46,286 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,286 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,286 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:46,292 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事定罪量刑信息-sscyr",
+  "c_source_bm":"T_XS_DZLXXX",
+  "c_source_dzdm":"10102037",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BFXSZRYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400171",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BFXSZRQX",
+  "lx":"Single"
+}
+2020-12-28 09:30:46,292 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  (SELECT dzzm.C_BH AS C_ZM_BH\n          , dzzm.C_BH_AJ AS C_ZM_BH_AJ\n          , dzzm.N_ZM\n          , dzzm.C_ZMZS\n          , dzzm.N_ZZM\n          ,dzzm.C_BH_BGR AS C_ZM_BH_BGR\n          , dzlxxx.*\n        where aj.N_YWLX !=20801  AND ywb.C_ZM_BH_BGR != nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BFXSZRYY = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BFXSZRQX = '{2}'"
+}
+2020-12-28 09:30:46,292 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-28 09:30:46,292 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:46,292 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,591 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,591 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 4",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '1'"
+}
+2020-12-28 09:31:27,591 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,591 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,591 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,597 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,598 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '2'"
+}
+2020-12-28 09:31:27,598 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,598 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,598 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,604 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,604 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '3'"
+}
+2020-12-28 09:31:27,604 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,605 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,605 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,609 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,610 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 5",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '5'"
+}
+2020-12-28 09:31:27,610 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,610 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,610 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,615 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,615 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 6",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '6'"
+}
+2020-12-28 09:31:27,616 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,616 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,616 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,621 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,621 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 7",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '7'"
+}
+2020-12-28 09:31:27,622 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,622 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,622 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,631 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_DZLXXX",
+  "c_source_dzdm":"10102035",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_PCQK",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400169",
+  "c_target_jtmz":" '7'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_PCJG",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,632 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DZLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_PCQK = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_PCJG = '4'"
+}
+2020-12-28 09:31:27,632 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_PCQK'.
+
+2020-12-28 09:31:27,632 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,632 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,750 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标数罪并罚定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_SZBFLXXX",
+  "c_source_dzdm":"10100001",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BCZZQLZS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400178",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BDZZQLLX",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,750 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_SZBFLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BCZZQLZS = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BDZZQLLX = '1'"
+}
+2020-12-28 09:31:27,751 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_BCZZQLZS'.
+
+2020-12-28 09:31:27,751 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,751 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:27,755 - root - DEBUG - 1 - {
+  "c_group":"sscyr-定罪量刑",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"刑事法标数罪并罚定罪量刑信息-sscyr",
+  "c_source_bm":"T_FB_SZBFLXXX",
+  "c_source_dzdm":"10100001",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BCZZQLZS",
+  "c_system_type":"np",
+  "c_target_bm":"T_DZLX_DZLXXX",
+  "c_target_dzdm":"11400178",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BDZZQLLX",
+  "lx":"Single"
+}
+2020-12-28 09:31:27,755 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_SZBFLXXX AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20400,20502,20503,20604,20701,20702,20703,20704,21001,21002,21003,21004)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BCZZQLZS = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_DZLX_DZLXXX  where dt_cjsj<'2020-12-05' AND C_BDZZQLLX = '2'"
+}
+2020-12-28 09:31:27,755 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_BCZZQLZS'.
+
+2020-12-28 09:31:27,756 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:27,756 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

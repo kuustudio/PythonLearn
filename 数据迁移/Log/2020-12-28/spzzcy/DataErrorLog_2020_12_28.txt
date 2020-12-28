@@ -1,0 +1,778 @@
+2020-12-28 09:29:32,332 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":"21",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,332 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 3",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '1'"
+}
+2020-12-28 09:29:32,332 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,332 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,332 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,337 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,338 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 4",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '2'"
+}
+2020-12-28 09:29:32,338 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,338 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,338 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,343 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,343 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 6",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '3'"
+}
+2020-12-28 09:29:32,343 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,343 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,343 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,350 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,350 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 7",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '4'"
+}
+2020-12-28 09:29:32,350 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,351 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,351 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,356 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,356 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 9",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '5'"
+}
+2020-12-28 09:29:32,356 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,356 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,356 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,364 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 9",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,364 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 8",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '6'"
+}
+2020-12-28 09:29:32,365 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,365 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,365 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,371 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,372 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 17",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '7'"
+}
+2020-12-28 09:29:32,372 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,372 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,372 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,378 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 17",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '7'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,378 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 18",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '8'"
+}
+2020-12-28 09:29:32,378 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,378 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,378 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,383 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 18",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '8'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,383 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 255",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,383 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,384 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,384 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,388 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,388 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 1",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,388 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,388 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,388 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,394 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,395 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 2",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '9'"
+}
+2020-12-28 09:29:32,395 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,395 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,395 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,400 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '9'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,400 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 5",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '11'"
+}
+2020-12-28 09:29:32,400 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,400 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,400 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,404 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '11'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,405 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 10",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,405 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,405 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,405 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,409 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 10",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,410 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 11",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,410 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,410 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,410 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,417 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 11",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,418 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 12",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,418 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,418 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,418 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,424 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 12",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,425 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 13",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,425 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,425 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,425 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,429 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 13",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,430 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 14",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,430 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,430 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,430 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,436 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 14",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,436 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 15",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,437 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,437 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,437 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,441 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 15",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,442 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 16",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '10'"
+}
+2020-12-28 09:29:32,442 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,442 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,442 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,446 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 16",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '10'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,446 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 19",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,446 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,447 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,447 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,451 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 19",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,451 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 20",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,451 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,451 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,451 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:32,455 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"审判组织成员合议庭成员-spzzcy",
+  "c_source_bm":"T_YWGY_LA_SPRY",
+  "c_source_dzdm":"10101035",
+  "c_source_jtmz":" 20",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_HYTCY",
+  "c_target_dzdm":"11400040",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JS",
+  "lx":"Single"
+}
+2020-12-28 09:29:32,456 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  JCSZ..T_YWGY_LA_SPRY  where N_JS in(3,4,6) AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JS = 21",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_HYTCY  where dt_cjsj<'2020-12-05'  AND C_JS = '255'"
+}
+2020-12-28 09:29:32,456 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'aj' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-28 09:29:32,456 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:29:32,456 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:29:34,172 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,172 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 1",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '1' and 'C_BH' ='BE8C1D40891B000461799D9DF0AA9586'"
+}
+2020-12-28 09:29:34,172 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为BE8C1D40891B000461799D9DF0AA9586的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,172 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,172 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为BE8C1D40891B000461799D9DF0AA9586的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:29:34,221 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,221 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 2",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '2' and 'C_BH' ='0FB62CBFDA9041BDD2E59C9CAB13D4A2'"
+}
+2020-12-28 09:29:34,222 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为0FB62CBFDA9041BDD2E59C9CAB13D4A2的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,222 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,222 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为0FB62CBFDA9041BDD2E59C9CAB13D4A2的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:29:34,257 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,257 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 3",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '3' and 'C_BH' ='E878C3C81A12AE04F5DD5B59D8F3FA97'"
+}
+2020-12-28 09:29:34,257 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为E878C3C81A12AE04F5DD5B59D8F3FA97的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,257 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,257 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为E878C3C81A12AE04F5DD5B59D8F3FA97的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:29:34,291 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,292 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 4",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '4' and 'C_BH' ='A75560432ABD364813F9555F15681503'"
+}
+2020-12-28 09:29:34,292 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为A75560432ABD364813F9555F15681503的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,292 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,292 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为A75560432ABD364813F9555F15681503的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:29:34,329 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,329 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 5",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '5' and 'C_BH' ='0BF2B8B7EAD8691E29B6E137A80ABD0D'"
+}
+2020-12-28 09:29:34,329 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为0BF2B8B7EAD8691E29B6E137A80ABD0D的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,329 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,329 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为0BF2B8B7EAD8691E29B6E137A80ABD0D的数据 请检查上方SQL是否正确
+==================================================
+2020-12-28 09:29:34,371 - root - DEBUG - 1 - {
+  "c_group":"spzzcy",
+  "c_ms":"spzzcy",
+  "c_sheet_mc":"管辖审判组织成员变更-spzzcy",
+  "c_source_bm":"T_GX_SPZZCYBG",
+  "c_source_dzdm":"10101244",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_BGYY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SPZZCY_SPZZCYBG",
+  "c_target_dzdm":"11400041",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BGYY",
+  "lx":"Single"
+}
+2020-12-28 09:29:34,372 - root - DEBUG - 1 - {
+  "sourceDB":"select ywb.C_BH as data from  T_GX_SPZZCYBG AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_BGYY = 6",
+  "targetDB":"select count(*) as data_count from spzzcy.T_SPZZCY_SPZZCYBG  where dt_cjsj<'2020-12-05'  AND C_BGYY = '6' and 'C_BH' ='1CCAF2BC549CFE210811477CD335DF12'"
+}
+2020-12-28 09:29:34,372 - root - INFO - 2 - T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为1CCAF2BC549CFE210811477CD335DF12的数据 请检查上方SQL是否正确
+2020-12-28 09:29:34,372 - root - INFO - 2 - <class 'ValueError'>
+2020-12-28 09:29:34,372 - root - ERROR - 2 - 
+T3C.T_SPZZCY_SPZZCYBG表中没有找到与NP.T_GX_SPZZCYBG表中编号为1CCAF2BC549CFE210811477CD335DF12的数据 请检查上方SQL是否正确
+==================================================

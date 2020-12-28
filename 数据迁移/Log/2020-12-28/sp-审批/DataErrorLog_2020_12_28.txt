@@ -1,0 +1,168 @@
+2020-12-28 09:30:42,617 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":"6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,617 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '1'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '2'"
+}
+2020-12-28 09:30:42,617 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,617 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,617 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:42,651 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,652 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '2'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '2'"
+}
+2020-12-28 09:30:42,652 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,652 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,652 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:42,686 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,686 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '3'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '1'"
+}
+2020-12-28 09:30:42,686 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,686 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,686 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:42,725 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,726 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '4'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '1'"
+}
+2020-12-28 09:30:42,726 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,726 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,726 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:42,759 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":" '4'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,760 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '5'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '1'"
+}
+2020-12-28 09:30:42,760 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,760 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,760 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:42,793 - root - DEBUG - 1 - {
+  "c_group":"sp-审批",
+  "c_ms":"sp",
+  "c_sheet_mc":"请示答复审批-sp",
+  "c_source_bm":"T_CMPT_SP_SP",
+  "c_source_dzdm":"20000001",
+  "c_source_jtmz":" '5'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_ZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SP",
+  "c_target_dzdm":"11400009",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SPRYD",
+  "lx":"Single"
+}
+2020-12-28 09:30:42,794 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_CMPT_SP_SP AS ywb JOIN T_QSDF_AJ AS aj ON ywb.C_EXT3 = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_ZT = '6'",
+  "targetDB":"select count(*) as data_count from sp.T_SP  where dt_cjsj<'2020-12-05' AND C_SPRYD = '1'"
+}
+2020-12-28 09:30:42,794 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:30:42,794 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:42,794 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

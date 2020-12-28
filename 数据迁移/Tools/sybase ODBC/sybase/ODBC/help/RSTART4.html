@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="WWH 3.0 Help Template" />
+  <meta name="LASTUPDATED" content="02/20/03 12:22:20" />
+  <title>Error Messages</title>
+  <link rel="StyleSheet" href="document.css" type="text/css" />
+  <link rel="StyleSheet" href="catalog.css" type="text/css" />
+<script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+
+  <script type="text/javascript" language="JavaScript1.2">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+  </script>
+ </head>
+
+ <body onLoad="WWHUpdate();">
+
+ <blockquote>
+<a name="wp552563"> </a><h1 class="pNewHTMLPageNoNum">
+Error Messages
+</h1>
+<hr /><a name="wp510126"> </a><p class="pBody">
+Error messages can come from:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1">
+<a name="wp510128"> </a><div class="pSmartList1"><li>An ODBC driver</li></div><a name="wp510130"> </a><div class="pSmartList1"><li>The database system</li></div><a name="wp534206"> </a><div class="pSmartList1"><li>The ODBC driver manager</li></div></ul></div>
+<a name="wp534207"> </a><p class="pBody">
+An error reported on an ODBC driver has the following format:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[<em class="cEmphasis">vendor</em>] [<em class="cEmphasis">ODBC_component</em>] <em class="cEmphasis">message</em><a name="wp534208"> </a>
+</pre></div>
+<a name="wp510138"> </a><p class="pBody">
+<em class="cEmphasis">ODBC_component</em> is the component in which the error occurred. For example, an error message from the Sybase driver would look like this:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[DataDirect] [ODBC Sybase driver]
+Invalid precision specified.<a name="wp510140"> </a>
+</pre></div>
+<a name="wp510142"> </a><p class="pBody">
+If you receive this type of error, check the last ODBC call made by your application for possible problems or contact your ODBC application vendor.
+</p>
+<a name="wp510144"> </a><p class="pBody">
+An error that occurs in the data source includes the data store name, in the following format:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[<em class="cEmphasis">vendor</em>] [<em class="cEmphasis">ODBC_component</em>] [<em class="cEmphasis">data_store</em>] <em class="cEmphasis">message</em><a name="wp510146"> </a>
+</pre></div>
+<a name="wp573132"> </a><p class="pBody">
+With this type of message, <em class="cEmphasis">ODBC_component</em> is the component that received the error from the data store indicated. For example, you may receive the following message from an Oracle data store:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[DataDirect] [ODBC Sybase driver] [Sybase]
+specified length too long for CHAR column<a name="wp510150"> </a>
+</pre></div>
+<a name="wp510152"> </a><p class="pBody">
+If you receive this type of error, something is incorrect regarding the database system. Check your database system documentation for more information or consult your database administrator. In this example, you would check your Oracle documentation.
+</p>
+<a name="wp510154"> </a><p class="pBody">
+The driver manager is a DLL that establishes connections with drivers, submits requests to drivers, and returns results to applications. An error that occurs in the driver manager has the following format:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[<span style="font-style: italic">vendor</span>] [ODBC XXX] <span style="font-style: italic">message</span><a name="wp510156"> </a>
+</pre></div>
+<a name="wp510158"> </a><p class="pBody">
+For example, an error from the Microsoft driver manager might look like this:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+[Microsoft] [ODBC Driver Manager]
+Driver does not support this function<a name="wp510160"> </a>
+</pre></div>
+<a name="wp510162"> </a><p class="pBody">
+If you receive this type of error, consult the Programmer&#8217;s Reference for the Microsoft ODBC Software Development Kit available from Microsoft.
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+<a name="wp510178"> </a>
+</pre></div>
+ </blockquote>
+
+ <hr />
+
+<script type="text/javascript" language="JavaScript1.2">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="WWH 3.0 Help Template" />
+  <meta name="LASTUPDATED" content="02/20/03 12:36:52" />
+  <title>Using LDAP</title>
+  <link rel="StyleSheet" href="document.css" type="text/css" />
+  <link rel="StyleSheet" href="catalog.css" type="text/css" />
+<script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+
+  <script type="text/javascript" language="JavaScript1.2">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+  </script>
+ </head>
+
+ <body onLoad="WWHUpdate();">
+
+ <blockquote>
+<a name="wp559572"> </a><h1 class="pNewHTMLPageNoNum">
+Using LDAP
+</h1>
+<hr /><a name="wp559574"> </a><p class="pBody">
+The Sybase Wire Protocol driver can retrieve connection information either from a data source or from a Lightweight Directory Access Protocol (LDAP) directory. If the driver uses an LDAP directory, the Sybase Wire Protocol data source connects to the LDAP server and retrieves the connection information from the LDAP directory. In this case, the data source&#8217;s configuration has only information to connect to the LDAP server and the information in the LDAP directory has the information to connect to the database server. Otherwise, the data source&#8217;s configuration has all of the information needed to connect to the database server.
+</p>
+<a name="wp559575"> </a><p class="pBody">
+LDAP is a standard protocol for accessing and updating common directory information. Storing connection information centrally in an LDAP directory provides flexibility to make environment changes and reduces the time it takes to reconfigure your infrastructure when a change takes place. For example, if a database must be moved to a different server, you do not have to reconfigure the user applications or the data sources that must now access the new server. Because the connection information is stored in an LDAP directory, you need only update the LDAP directory entries so that the Sybase Wire Protocol driver can connect to the new server.
+</p>
+<a name="wp559576"> </a><p class="pBody">
+The Sybase Wire Protocol drivers supports Sybase&#8217;s LDAP implementation of an LDAP schema. The driver uses the standard Sybase LDAP connection attribute names for an LDAP directory entry as defined in Sybase&#8217;s documentation and configuration files&#8212;for example, sybaseAddress.
+</p>
+<a name="wp559577"> </a><p class="pBody">
+The values set for the sybaseAddress and sybaseHAServernam connection attributes in a Sybase LDAP directory entry override the values set for the NetworkLibraryName, NetworkAddress, UseSSL, and FailoverNetworkAddress connection attributes defined in the Connect ODBC system information file, but <b class="cBold">not</b> in a connection string.
+</p>
+ </blockquote>
+
+ <hr />
+
+<script type="text/javascript" language="JavaScript1.2">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+  </script>
+
+ </body>
+</html>

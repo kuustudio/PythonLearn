@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40" xml:lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Rase10_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Rase10_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Persisting a Result Set as an XML Data File</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Shou-yen Joseph Teng</o:Author>
+  <o:LastAuthor>Shou-yen Joseph Teng</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2003-09-04T21:28:00Z</o:Created>
+  <o:LastSaved>2003-09-04T21:30:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>485</o:Words>
+  <o:Characters>2769</o:Characters>
+  <o:Company>Sybase, Inc.</o:Company>
+  <o:Lines>23</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3400</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=document.css>
+<link rel=Stylesheet type="text/css" media=all href=catalog.css>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Batang;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+code
+	{mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";}
+p.pbody, li.pbody, div.pbody
+	{mso-style-name:pbody;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodybold, li.pbodybold, div.pbodybold
+	{mso-style-name:pbodybold;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyindent12pxbeforeafter, li.pbodyindent12pxbeforeafter, div.pbodyindent12pxbeforeafter
+	{mso-style-name:pbodyindent12pxbeforeafter;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyrelative, li.pbodyrelative, div.pbodyrelative
+	{mso-style-name:pbodyrelative;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyrelativesub, li.pbodyrelativesub, div.pbodyrelativesub
+	{mso-style-name:pbodyrelativesub;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented1, li.pindented1, div.pindented1
+	{mso-style-name:pindented1;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented2, li.pindented2, div.pindented2
+	{mso-style-name:pindented2;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented3, li.pindented3, div.pindented3
+	{mso-style-name:pindented3;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented4, li.pindented4, div.pindented4
+	{mso-style-name:pindented4;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented5, li.pindented5, div.pindented5
+	{mso-style-name:pindented5;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindentedrelative, li.pindentedrelative, div.pindentedrelative
+	{mso-style-name:pindentedrelative;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel1ix, li.plevel1ix, div.plevel1ix
+	{mso-style-name:plevel1ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel2ix, li.plevel2ix, div.plevel2ix
+	{mso-style-name:plevel2ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel3ix, li.plevel3ix, div.plevel3ix
+	{mso-style-name:plevel3ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel4ix, li.plevel4ix, div.plevel4ix
+	{mso-style-name:plevel4ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel5ix, li.plevel5ix, div.plevel5ix
+	{mso-style-name:plevel5ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.psyntaxembed, li.psyntaxembed, div.psyntaxembed
+	{mso-style-name:psyntaxembed;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Batang;}
+p.ptoc2, li.ptoc2, div.ptoc2
+	{mso-style-name:ptoc2;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc3, li.ptoc3, div.ptoc3
+	{mso-style-name:ptoc3;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc4, li.ptoc4, div.ptoc4
+	{mso-style-name:ptoc4;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc5, li.ptoc5, div.ptoc5
+	{mso-style-name:ptoc5;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:641350806;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-356484206 839519576 1635290140 -1261515752 939033134 -1865494018 -1835125610 -315716332 -1099921324 2076867408;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1
+	{mso-list-id:2000301332;
+	mso-list-type:hybrid;
+	mso-list-template-ids:291796202 -1523529900 1453378726 1922307084 -1879140662 1748545728 1391392934 -1490545356 -709179610 -1334675008;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/context.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/towwhdir.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/wwhpagef.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta http-equiv=Content-Style-Type content="text/css">
+<meta name=TEMPLATEBASE content="WWH 3.0 Help Template">
+<meta name=LASTUPDATED content="02/20/03 12:36:52">
+</head>
+
+<body bgcolor="#ffffee" lang=EN-US style='tab-interval:.5in'
+onload="WWHUpdate();">
+
+<div class=Section1>
+
+<h1 style='margin-right:.5in;margin-left:.5in'><a name=wp533137></a><span
+lang=EN style='font-size:19.5pt;font-family:Arial;color:#003366;mso-ansi-language:
+EN'>Persisting a Result Set as an XML Data File <o:p></o:p></span></h1>
+
+
+<div class=MsoNormal align=center style='margin-right:.5in;mso-margin-top-alt:
+auto;mso-margin-bottom-alt:auto;margin-left:.5in;text-align:center'><span
+lang=EN style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp555843></a><span
+lang=EN style='mso-ansi-language:EN'>This driver allows you to persist a result
+set as an XML data file with embedded schema. To implement XML persistence, a
+client application must do the following: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l1 level1 lfo1;tab-stops:
+list .5in'><a name=wp555844></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Turn on STATIC cursors. For example:<o:p></o:p></span></p>
+
+<p class=psyntaxembed style='margin-top:9.0pt;margin-right:.5in;margin-bottom:
+9.0pt;margin-left:1.0in'><a name=wp555845></a><span lang=EN style='mso-ansi-language:
+EN'>SQLSetStmtAttr (hstmt, SQL_ATTR_CURSOR_TYPE, SQL_CURSOR_STATIC,
+SQL_IS_INTEGER) <o:p></o:p></span></p>
+
+<p class=pbodyindent12pxbeforeafter style='margin-top:9.0pt;margin-right:.5in;
+margin-bottom:9.0pt;margin-left:1.0in'><a name=wp555846></a><span lang=EN
+style='mso-ansi-language:EN'>NOTE: A result set can be persisted as an XML data
+file only if the result set is generated using STATIC cursors. Otherwise, the
+following error is returned: <o:p></o:p></span></p>
+
+<p class=psyntaxembed style='margin-top:9.0pt;margin-right:.5in;margin-bottom:
+9.0pt;margin-left:1.0in'><a name=wp555847></a><span lang=EN style='mso-ansi-language:
+EN'>Driver only supports XML persistence when using driver&#8217;s static cursors. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l1 level1 lfo1;tab-stops:
+list .5in'><a name=wp555848></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Execute a SQL statement. For example:<o:p></o:p></span></p>
+
+<p class=psyntaxembed style='margin-top:9.0pt;margin-right:.5in;margin-bottom:
+9.0pt;margin-left:1.0in'><a name=wp555849></a><span lang=EN style='mso-ansi-language:
+EN'>SQLExecDirect (hstmt, &quot;Select * from GTABLE&quot;, SQL_NTS) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l1 level1 lfo1;tab-stops:
+list .5in'><a name=wp555850></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Persist the result set as an XML data file. For example:<o:p></o:p></span></p>
+
+<p class=psyntaxembed style='margin-top:9.0pt;margin-right:.5in;margin-bottom:
+9.0pt;margin-left:1.0in'><a name=wp555851></a><span lang=EN style='mso-ansi-language:
+EN'>SQLSetStmtAttr (hstmt, SQL_PERSIST_AS_XML, &quot;c:\temp\GTABLE.XML&quot;,
+SQL_NTS) <o:p></o:p></span></p>
+
+<p class=pbodyindent12pxbeforeafter style='margin-top:9.0pt;margin-right:.5in;
+margin-bottom:9.0pt;margin-left:1.0in'><a name=wp555852></a><span lang=EN
+style='mso-ansi-language:EN'>NOTE: A new statement attribute is available to
+support XML persistence, SQL_PERSIST_AS_XML. A client application must call
+SQLSetStmtAttr with this new attribute as an argument. See the following table
+for the definition of valid arguments for SQLSetStmtAttr. <o:p></o:p></span></p>
+
+<table border=1 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:.5in'>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:Arial;color:black'>Argument <a
+  name=wp555874></a><a name=wp555855></a><o:p></o:p></span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:Arial;color:black'>Definition <a
+  name=wp555857></a><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><em><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:black'>StatementHandle</span></em><a
+  name=wp555859></a><span style='font-size:9.0pt;font-family:Arial;color:black'>
+  <o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>The
+  handle of the statement that contains the result set to persist as XML. <a
+  name=wp555861></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><em><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:black'>Attribute</span></em><a
+  name=wp555863></a><span style='font-size:9.0pt;font-family:Arial;color:black'>
+  <o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>SQL_PERSIST_AS_XML.
+  This new statement attribute can be found in the file qesqlext.h, which is
+  installed with the driver. <a name=wp555865></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><em><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:black'>ValuePtr</span></em><a
+  name=wp555867></a><span style='font-size:9.0pt;font-family:Arial;color:black'>
+  <o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>Pointer
+  to a URL that specifies the full path name of the XML data file to be
+  generated. The directory specified in th<a name=wp555869></a>e path name must
+  exist, and if the specified file name exists, the file will be overwritten. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><em><span style='font-size:10.0pt;font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";color:black'>StringLength</span></em><a
+  name=wp555871></a><span style='font-size:9.0pt;font-family:Arial;color:black'>
+  <o:p></o:p></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>The
+  length of the string pointed to by ValuePtr or SQL_NTS if ValuePtr points to
+  a null terminated string. <a name=wp555873></a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp555875></a><span
+lang=EN style='mso-ansi-language:EN'>A client application can choose to persist
+the data at any time that the statement is in an executed or cursor-positioned
+state. At any other time, the driver returns the following message: <o:p></o:p></span></p>
+
+<pre style='margin-top:0in;margin-right:.5in;margin-bottom:0in;margin-left:
+.5in;margin-bottom:.0001pt'><span lang=EN style='color:black;mso-ansi-language:
+EN'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre
+style='margin-top:0in;margin-right:.5in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt'><span lang=EN style='color:black;mso-ansi-language:EN'>Function Sequence Error<a
+name=wp555876> </a><o:p></o:p></span></pre>
+
+<h3 style='margin-right:.5in;margin-left:.5in'><a name=wp555877></a><span
+lang=EN style='font-family:Arial;color:#003366;mso-ansi-language:EN;font-weight:
+normal'>Using the Windows XML Persistence Demo Tool <o:p></o:p></span></h3>
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp555878></a><span
+lang=EN style='mso-ansi-language:EN'>On Windows, Sybase ASE ODBC Driver is
+shipped with an XML persistence demo tool. This tool is installed in the Sybase
+ASE ODBC Driver installation directory. <o:p></o:p></span></p>
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp555879></a><span
+lang=EN style='mso-ansi-language:EN'>The tool has a graphical user interface
+and allows you to persist data as an XML data file. To use this tool, take the
+following steps: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555880></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>From the Sybase ASE ODBC Driver 4.10 program group, select <b>XML
+Persistence Demo</b>. The XML Persistence dialog box appears.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555889></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>First, you must connect to the database. Click <b>Connect</b>. The Select
+Data Source dialog box appears.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555898></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>You must either select an existing data source or create a new one. Take
+one of the following actions:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.5in;text-indent:-.25in;mso-list:l0 level2 lfo2;tab-stops:
+list 1.0in'><a name=wp555899></a><![if !supportLists]><span lang=EN
+style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:"Courier New";
+mso-bidi-font-family:Arial;color:black;mso-ansi-language:EN'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN style='font-size:9.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN'>Select an existing data source and click <b>OK</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.5in;text-indent:-.25in;mso-list:l0 level2 lfo2;tab-stops:
+list 1.0in'><a name=wp555900></a><![if !supportLists]><span lang=EN
+style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:"Courier New";
+mso-bidi-font-family:Arial;color:black;mso-ansi-language:EN'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN style='font-size:9.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN'>Create a new file data source by clicking <b>New</b>.
+The Create New Data Source dialog box appears. Follow the instructions in the
+dialog box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.5in;text-indent:-.25in;mso-list:l0 level2 lfo2;tab-stops:
+list 1.0in'><a name=wp555901></a><![if !supportLists]><span lang=EN
+style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:"Courier New";
+mso-bidi-font-family:Arial;color:black;mso-ansi-language:EN'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN style='font-size:9.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN'>Create a new machine data source by clicking
+the Machine Data Source tab and clicking <b>New</b>. The Create New Data Source
+dialog box appears. Follow the instructions in the dialog box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555902></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>After you have connected to a database, type a SQL Select statement in the
+Query text box of the XML Persistence dialog box. Then, click <b>Persist</b>.
+The Save As dialog box appears.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555903></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Specify a name and location for the XML data file that will be created.
+Then, click <b>OK</b>.<o:p></o:p></span></p>
+
+<p class=pbodyindent12pxbeforeafter style='margin-top:9.0pt;margin-right:.5in;
+margin-bottom:9.0pt;margin-left:1.0in'><a name=wp555904></a><span lang=EN
+style='mso-ansi-language:EN'>Note that the Status box in the XML Persistence
+dialog box displays whether or not the action failed or succeeded. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555905></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Click <b>Disconnect</b> to disconnect from the database.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:
+list .5in'><a name=wp555906></a><![if !supportLists]><span lang=EN
+style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:EN'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=EN style='font-size:9.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN'>Click <b>Close</b> to exit the tool.<o:p></o:p></span></p>
+
+
+<div class=MsoNormal align=center style='text-align:center'><span lang=EN
+style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=MsoNormal><span lang=EN style='mso-ansi-language:EN'><script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+</script></span></p>
+
+</div>
+
+</body>
+
+</html>

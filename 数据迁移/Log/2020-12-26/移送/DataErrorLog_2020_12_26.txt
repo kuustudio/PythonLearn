@@ -1,0 +1,28 @@
+2020-12-26 13:56:43,175 - root - DEBUG - 1 - {
+  "c_group":"移送",
+  "c_ms":"ys",
+  "c_sheet_mc":"其他移送-ys",
+  "c_source_bm":"T_YWGY_AJYS_JS",
+  "c_source_dzdm":"10101125",
+  "c_source_jtmz":"21",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CUSTOMIZEDINFO1",
+  "c_system_type":"np",
+  "c_target_bm":"T_YS_YSJL",
+  "c_target_dzdm":"11401344",
+  "c_target_jtmz":"1001",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_YSLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:43,176 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_QT_AJ aj\n    JOIN (SELECT js.C_BH\n              , js.C_BH_BS\n              , ajys.C_BH_CPJG\n              , js.C_BH_FSJL\n              , js.C_CUSTOMIZEDINFO7\n              , js.C_CUSTOMIZEDINFO1\n              , js.N_ZT\n              , js.C_YSLY\n              , ajys.D_YSRQ\n              , ajys.C_YSBM\n              , ajys.C_YSR\n              , ajys.C_CLBZ\n              , js.C_AJYSLX\n              , js.C_BH_XAJBS\n              , js.C_JSDW\n              , js.DT_JSSJ\n              , js.C_JSBM\n              , js.C_JSR\n              , ajys.C_BH\n              , ajys.C_BH_YSAJ\n              , ajys.C_BH_FS\n            where aj.N_YWLX NOT IN (100301,100302,100203) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX IN (20901, 31001, 40501, 50306, 50301, 60305, 60309)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CUSTOMIZEDINFO1 = '21'",
+  "targetDB":"select count(*) as data_count from ys.T_YS_YSJL  where dt_cjsj<'2020-12-05' AND C_YSLX = '1001'"
+}
+2020-12-26 13:56:43,176 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: The column prefix 'js' does not match with a table name or alias name used in the query. Either the table is not specified in the FROM clause or it has a correlation name which must be used instead.
+
+2020-12-26 13:56:43,176 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:43,176 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

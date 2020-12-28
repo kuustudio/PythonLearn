@@ -1,0 +1,80 @@
+2020-12-28 09:29:25,594 - root - DEBUG - 1 - {
+  "c_group":"sscyr-民事",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"民事当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_MS_DSR",
+  "c_source_dmlx":"rzzt",
+  "c_source_zd":"N_RZZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dmlx":"11401142",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_RZZT",
+  "c_target_zhl":null
+}
+2020-12-28 09:29:25,594 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-28 09:29:25,594 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-28 09:29:25,594 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-28 09:29:27,357 - root - DEBUG - 1 - {
+  "c_group":"sscyr-民事",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"民事当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_MS_DSR",
+  "c_source_dmlx":"rzzt",
+  "c_source_zd":"N_RZZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dmlx":"11401142",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_RZZT",
+  "c_target_zhl":null
+}
+2020-12-28 09:29:27,357 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-28 09:29:27,357 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-28 09:29:27,357 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-28 11:14:55,187 - root - DEBUG - 1 - {
+  "c_group":"sscyr-民事",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"民事当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_MS_DSR",
+  "c_source_dmlx":"rzzt",
+  "c_source_zd":"N_RZZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dmlx":"11401142",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_RZZT",
+  "c_target_zhl":null
+}
+2020-12-28 11:14:55,187 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-28 11:14:55,187 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-28 11:14:55,187 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-28 11:14:57,070 - root - DEBUG - 1 - {
+  "c_group":"sscyr-民事",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"民事当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_MS_DSR",
+  "c_source_dmlx":"rzzt",
+  "c_source_zd":"N_RZZT",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dmlx":"11401142",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_RZZT",
+  "c_target_zhl":null
+}
+2020-12-28 11:14:57,070 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-28 11:14:57,070 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-28 11:14:57,070 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================

@@ -1,0 +1,616 @@
+2020-12-26 13:57:05,190 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":"4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,190 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '1'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{1}'"
+}
+2020-12-26 13:57:05,191 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,191 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,191 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,201 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,202 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '2'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{2}'"
+}
+2020-12-26 13:57:05,202 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,202 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,202 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,210 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,210 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '3'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{3}'"
+}
+2020-12-26 13:57:05,210 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,210 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,210 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,218 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,218 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '5'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{5}'"
+}
+2020-12-26 13:57:05,219 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,219 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,219 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,230 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '5'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{5}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,230 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '6'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{6}'"
+}
+2020-12-26 13:57:05,230 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,230 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,230 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,238 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '6'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{6}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,238 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '7'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{7}'"
+}
+2020-12-26 13:57:05,238 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,239 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,239 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,248 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '7'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{7}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,248 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '8'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{8}'"
+}
+2020-12-26 13:57:05,248 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,248 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,248 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,255 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '8'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{8}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,255 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '255'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{255}'"
+}
+2020-12-26 13:57:05,255 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,255 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,255 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,262 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127005",
+  "c_source_jtmz":" '255'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_GWFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401883",
+  "c_target_jtmz":" '{255}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWFS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,262 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_GWFS = '4'",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWFS = '{4}'"
+}
+2020-12-26 13:57:05,262 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,262 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,263 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,275 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127999",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401880",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWLX",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,275 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GWRLX = 2",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWLX = '2'"
+}
+2020-12-26 13:57:05,276 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,276 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,276 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,292 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127999",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401880",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWLX",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,292 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GWRLX = 1",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWLX = '1'"
+}
+2020-12-26 13:57:05,292 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,293 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,293 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,305 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":"7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,306 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 1",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '1'"
+}
+2020-12-26 13:57:05,306 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,306 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,306 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,315 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,316 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 2",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '2'"
+}
+2020-12-26 13:57:05,316 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,316 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,316 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,325 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,326 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 3",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '3'"
+}
+2020-12-26 13:57:05,326 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,326 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,326 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,333 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,334 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 4",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '4'"
+}
+2020-12-26 13:57:05,334 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,334 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,334 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,342 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,342 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 5",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '2'"
+}
+2020-12-26 13:57:05,342 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,343 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,343 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,352 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,353 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 6",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '3'"
+}
+2020-12-26 13:57:05,353 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,353 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,353 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,360 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127003",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JG_LEVEL",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401881",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWRSSJGCJ",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,360 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JG_LEVEL = 7",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWRSSJGCJ = '4'"
+}
+2020-12-26 13:57:05,360 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,360 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,361 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,377 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127004",
+  "c_source_jtmz":"255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GYXS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401882",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWXS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,377 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GYXS = 1",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWXS = '1'"
+}
+2020-12-26 13:57:05,378 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,378 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,378 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,388 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127004",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GYXS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401882",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWXS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,388 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GYXS = 2",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWXS = '2'"
+}
+2020-12-26 13:57:05,388 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,388 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,388 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,396 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127004",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GYXS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401882",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWXS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,396 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GYXS = 3",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWXS = '3'"
+}
+2020-12-26 13:57:05,396 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,396 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,396 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:57:05,408 - root - DEBUG - 1 - {
+  "c_group":"ldgw",
+  "c_ms":"ldgw",
+  "c_sheet_mc":"请示答复领导过问-ldgw",
+  "c_source_bm":"T_AJGW_REGISTERED",
+  "c_source_dzdm":"10127004",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_GYXS",
+  "c_system_type":"np",
+  "c_target_bm":"T_LDGW_GWJL",
+  "c_target_dzdm":"11401882",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_GWXS",
+  "lx":"Single"
+}
+2020-12-26 13:57:05,408 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  YWST..T_AJGW_REGISTERED ywb\n    JOIN YWST..T_QSDF_AJ aj ON ywb.C_AJBH = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.N_YWLX IN (20903,31003,40503,50303,50305)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_GYXS = 255",
+  "targetDB":"select count(*) as data_count from ldgw.T_LDGW_GWJL  where dt_cjsj<'2020-12-05' AND C_GWXS = '255'"
+}
+2020-12-26 13:57:05,408 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-26 13:57:05,408 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:57:05,409 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

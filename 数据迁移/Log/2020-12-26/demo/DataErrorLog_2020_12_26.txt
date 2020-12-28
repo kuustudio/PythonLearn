@@ -1,0 +1,60 @@
+2020-12-26 13:56:18,034 - root - DEBUG - 1 - {
+  "c_group":"demo",
+  "c_ms":"test",
+  "c_sheet_mc":"子业务表-test",
+  "c_source_bm":"test.t_aj_jc_source",
+  "c_source_dzdm":"01010103",
+  "c_source_jtmz":"30200",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"c_ywlx",
+  "c_system_type":"test",
+  "c_target_bm":"test.t_spzzcy_target",
+  "c_target_dzdm":"010103",
+  "c_target_jtmz":"0302",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"c_ywlx",
+  "lx":"Single"
+}
+2020-12-26 13:56:18,034 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  test.t_aj_jc_source as aj join test.t_spzzcy_source as ywb on aj.c_bh = ywb.c_bh_aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.c_ywlx = '30100'",
+  "targetDB":"select count(*) as data_count from test.test.t_spzzcy_target  where dt_cjsj<'2020-12-05'  AND c_ywlx = '0301'"
+}
+2020-12-26 13:56:18,035 - root - INFO - 2 - 错误:  未实现跨数据库关联: "test.test.t_spzzcy_target"
+LINE 1: select count(*) as data_count from test.test.t_spzzcy_target...
+                                           ^
+
+2020-12-26 13:56:18,035 - root - INFO - 2 - <class 'psycopg2.errors.FeatureNotSupported'>
+2020-12-26 13:56:18,035 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:18,042 - root - DEBUG - 1 - {
+  "c_group":"demo",
+  "c_ms":"test",
+  "c_sheet_mc":"子业务表-test",
+  "c_source_bm":"test.t_aj_jc_source",
+  "c_source_dzdm":"01010103",
+  "c_source_jtmz":" '30100'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"c_ywlx",
+  "c_system_type":"test",
+  "c_target_bm":"test.t_spzzcy_target",
+  "c_target_dzdm":"010103",
+  "c_target_jtmz":" '0301'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"c_ywlx",
+  "lx":"Single"
+}
+2020-12-26 13:56:18,043 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  test.t_aj_jc_source as aj join test.t_spzzcy_source as ywb on aj.c_bh = ywb.c_bh_aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.c_ywlx = '30200'",
+  "targetDB":"select count(*) as data_count from test.test.t_spzzcy_target  where dt_cjsj<'2020-12-05'  AND c_ywlx = '0302'"
+}
+2020-12-26 13:56:18,043 - root - INFO - 2 - 错误:  未实现跨数据库关联: "test.test.t_spzzcy_target"
+LINE 1: select count(*) as data_count from test.test.t_spzzcy_target...
+                                           ^
+
+2020-12-26 13:56:18,043 - root - INFO - 2 - <class 'psycopg2.errors.FeatureNotSupported'>
+2020-12-26 13:56:18,043 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

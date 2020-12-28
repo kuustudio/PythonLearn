@@ -1,0 +1,1284 @@
+2020-12-26 13:56:58,246 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0299'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,263 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0299'"
+}
+2020-12-26 13:56:58,264 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,264 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,264 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,276 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0301'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,276 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0301'"
+}
+2020-12-26 13:56:58,276 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为6,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,276 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,276 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为6,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,286 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0302'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,286 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0302'"
+}
+2020-12-26 13:56:58,286 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为8,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,286 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,286 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为8,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,297 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0303'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,297 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0303'"
+}
+2020-12-26 13:56:58,297 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为7,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,297 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,298 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为7,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,308 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0304'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,308 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0304'"
+}
+2020-12-26 13:56:58,308 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为7,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,309 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,309 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为7,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,324 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0311'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,324 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 6",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0311'"
+}
+2020-12-26 13:56:58,324 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,324 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,325 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,335 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0312'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,336 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 7",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0312'"
+}
+2020-12-26 13:56:58,336 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为4,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,336 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,336 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为4,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,353 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"10101205",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0399'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,353 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_FYLX = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0399'"
+}
+2020-12-26 13:56:58,353 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,353 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,353 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_SFJN.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,374 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JNFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400096",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JKFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,374 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_JNFS = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_JKFS = '1'"
+}
+2020-12-26 13:56:58,375 - root - INFO - 2 - T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为80,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,375 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,375 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为80,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,387 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JNFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400096",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JKFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,387 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_JNFS = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_JKFS = '3'"
+}
+2020-12-26 13:56:58,387 - root - INFO - 2 - T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为8,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,387 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,387 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为8,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,400 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JNFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400096",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JKFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,401 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_JNFS = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_JKFS = '4'"
+}
+2020-12-26 13:56:58,401 - root - INFO - 2 - T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为6,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,401 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,401 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为6,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,416 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JNFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400096",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JKFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,416 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_JNFS = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_JKFS = '2'"
+}
+2020-12-26 13:56:58,417 - root - INFO - 2 - T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为21,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,417 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,417 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为21,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,427 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费交费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JNFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400096",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JKFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,427 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  (ywb.N_TF != 1 or ywb.N_TF IS NULL) AND  ywb.N_JNFS = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_JKFS = '255'"
+}
+2020-12-26 13:56:58,427 - root - INFO - 2 - T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为5,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,427 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,427 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_JKFS数量为0,NP.T_XZ_SFJN.N_JNFS数量为5,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,446 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0299'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,446 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0299'"
+}
+2020-12-26 13:56:58,446 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,446 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,446 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,461 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0301'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,462 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0301'"
+}
+2020-12-26 13:56:58,462 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为40,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,462 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,462 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为40,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,474 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0302'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,474 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0302'"
+}
+2020-12-26 13:56:58,474 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为9,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,474 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,474 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为9,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,484 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0303'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,484 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0303'"
+}
+2020-12-26 13:56:58,484 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,484 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,484 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,496 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0304'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,496 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0304'"
+}
+2020-12-26 13:56:58,496 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为10,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,496 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,496 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为10,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,507 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 16",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0305'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,508 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 16",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0305'"
+}
+2020-12-26 13:56:58,508 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,508 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,508 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为1,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,516 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0311'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,516 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 6",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0311'"
+}
+2020-12-26 13:56:58,517 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为4,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,517 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,517 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为4,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,526 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0312'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,526 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 7",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0312'"
+}
+2020-12-26 13:56:58,526 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,526 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,526 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为3,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,541 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10101122",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400086",
+  "c_target_jtmz":" '0399'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_FYLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,541 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYLX = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_FYLX = '0399'"
+}
+2020-12-26 13:56:58,541 - root - INFO - 2 - T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,541 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,541 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_FYLX数量为0,NP.T_XZ_QTSF.N_FYLX数量为5,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,556 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,556 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '1'"
+}
+2020-12-26 13:56:58,556 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为13,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,556 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,557 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为13,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,568 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,568 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '2'"
+}
+2020-12-26 13:56:58,568 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为15,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,568 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,568 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为15,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,578 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,578 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '3'"
+}
+2020-12-26 13:56:58,578 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为10,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,578 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,578 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为10,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,590 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,591 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '4'"
+}
+2020-12-26 13:56:58,591 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为4,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,591 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,591 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为4,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,603 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,603 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 5",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '5'"
+}
+2020-12-26 13:56:58,603 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,604 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,604 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为1,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,613 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费其他诉费-sf",
+  "c_source_bm":"T_XZ_QTSF",
+  "c_source_dzdm":"10103398",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_FYZFDXLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JF",
+  "c_target_dzdm":"11400090",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_QTFYZFDXLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,613 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_QTSF AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND (ywb.N_SLF != 1 or ywb.N_SLF IS NULL)AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_FYZFDXLX = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JF  where dt_cjsj<'2020-12-05' AND C_QTFYZFDXLX = '255'"
+}
+2020-12-26 13:56:58,613 - root - INFO - 2 - T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,613 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,613 - root - ERROR - 2 - 
+T3C.T_SF_JF.C_QTFYZFDXLX数量为0,NP.T_XZ_QTSF.N_FYZFDXLX数量为1,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,625 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101082",
+  "c_source_jtmz":"3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_SQJZLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11400091",
+  "c_target_jtmz":"3",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SQJZLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,625 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_SQJZLX = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_SQJZLX = '1'"
+}
+2020-12-26 13:56:58,626 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,626 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,626 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,631 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101082",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_SQJZLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11400091",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SQJZLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,631 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_SQJZLX = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_SQJZLX = '2'"
+}
+2020-12-26 13:56:58,631 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,631 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,631 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,637 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101082",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_SQJZLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11400091",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_SQJZLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,637 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_SQJZLX = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_SQJZLX = '3'"
+}
+2020-12-26 13:56:58,637 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,637 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,638 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,646 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101169",
+  "c_source_jtmz":"3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_HJJZJD",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11401475",
+  "c_target_jtmz":"3",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TYHJJZJD",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,647 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_HJJZJD = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_TYHJJZJD = '1'"
+}
+2020-12-26 13:56:58,647 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,647 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,647 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,651 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101169",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_HJJZJD",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11401475",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TYHJJZJD",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,651 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_HJJZJD = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_TYHJJZJD = '2'"
+}
+2020-12-26 13:56:58,651 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,652 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,652 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,656 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费减免缓-sf",
+  "c_source_bm":"T_XZ_SFJMH",
+  "c_source_dzdm":"10101169",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_HJJZJD",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_JMH",
+  "c_target_dzdm":"11401475",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TYHJJZJD",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,656 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJMH AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_HJJZJD = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_JMH  where dt_cjsj<'2020-12-05' AND C_TYHJJZJD = '3'"
+}
+2020-12-26 13:56:58,656 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,656 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,657 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,668 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":"7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":"7",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,669 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '1'"
+}
+2020-12-26 13:56:58,669 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,669 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,669 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,676 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,676 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '3'"
+}
+2020-12-26 13:56:58,676 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,676 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,676 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,681 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,682 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '4'"
+}
+2020-12-26 13:56:58,682 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,682 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,682 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,688 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,688 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 8",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '999006'"
+}
+2020-12-26 13:56:58,688 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,688 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,688 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,693 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '999006'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,694 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 255",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '255'"
+}
+2020-12-26 13:56:58,694 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,694 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,694 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,699 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,699 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '2'"
+}
+2020-12-26 13:56:58,699 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,699 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,699 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,705 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,705 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 5",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '5'"
+}
+2020-12-26 13:56:58,705 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,705 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,705 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,712 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,713 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 6",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '6'"
+}
+2020-12-26 13:56:58,713 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,713 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,713 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,719 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费明细-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400004",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF_MX",
+  "c_target_dzdm":"11401477",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFSY",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,719 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFSY = 7",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF_MX  where dt_cjsj<'2020-12-05' AND C_TFSY = '7'"
+}
+2020-12-26 13:56:58,719 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:58,719 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:58,719 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:58,743 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFZFFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF",
+  "c_target_dzdm":"11400097",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,743 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND ywb.N_TF = 1AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFZFFS = 1",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF  where dt_cjsj<'2020-12-05' AND C_TFFS = '1'"
+}
+2020-12-26 13:56:58,743 - root - INFO - 2 - T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为30,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,743 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,743 - root - ERROR - 2 - 
+T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为30,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,755 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFZFFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF",
+  "c_target_dzdm":"11400097",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,755 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND ywb.N_TF = 1AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFZFFS = 3",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF  where dt_cjsj<'2020-12-05' AND C_TFFS = '3'"
+}
+2020-12-26 13:56:58,755 - root - INFO - 2 - T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为13,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,755 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,755 - root - ERROR - 2 - 
+T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为13,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,765 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFZFFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF",
+  "c_target_dzdm":"11400097",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,765 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND ywb.N_TF = 1AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFZFFS = 4",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF  where dt_cjsj<'2020-12-05' AND C_TFFS = '4'"
+}
+2020-12-26 13:56:58,766 - root - INFO - 2 - T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为3,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,766 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,766 - root - ERROR - 2 - 
+T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为3,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:58,797 - root - DEBUG - 1 - {
+  "c_group":"诉费",
+  "c_ms":"sf",
+  "c_sheet_mc":"行政诉费退费-sf",
+  "c_source_bm":"T_XZ_SFJN",
+  "c_source_dzdm":"101400003",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_TFZFFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SF_TF",
+  "c_target_dzdm":"11400097",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_TFFS",
+  "lx":"Single"
+}
+2020-12-26 13:56:58,798 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XZ_SFJN AS ywb JOIN T_XZ_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND ywb.N_TF = 1AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_TFZFFS = 2",
+  "targetDB":"select count(*) as data_count from sf.T_SF_TF  where dt_cjsj<'2020-12-05' AND C_TFFS = '2'"
+}
+2020-12-26 13:56:58,798 - root - INFO - 2 - T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为28,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:58,798 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:58,798 - root - ERROR - 2 - 
+T3C.T_SF_TF.C_TFFS数量为0,NP.T_XZ_SFJN.N_TFZFFS数量为28,请检查生成Sql确定是否迁移问题
+==================================================

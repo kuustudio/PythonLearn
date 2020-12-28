@@ -1,0 +1,672 @@
+2020-12-28 09:30:36,546 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10100002",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_YJAWS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400010",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JAWS",
+  "lx":"Single"
+}
+2020-12-28 09:30:36,546 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.N_YWLX IN (80000,80100,80101,80102,80200)  AND aj.D_JARQ is not nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  aj.N_YJAWS = 1",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where dt_cjsj<'2020-12-05' AND C_JAWS = '1'"
+}
+2020-12-28 09:30:36,546 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:30:36,546 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:36,546 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:36,553 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10100002",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_YJAWS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400010",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JAWS",
+  "lx":"Single"
+}
+2020-12-28 09:30:36,553 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.N_YWLX IN (80000,80100,80101,80102,80200)  AND aj.D_JARQ is not nullAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  aj.N_YJAWS = 2",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where dt_cjsj<'2020-12-05' AND C_JAWS = '2'"
+}
+2020-12-28 09:30:36,553 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:30:36,553 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:36,553 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,153 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,153 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 3",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,153 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,153 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,153 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,160 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,161 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 5",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '3'"
+}
+2020-12-28 09:32:20,161 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,161 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,161 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,166 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,166 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 7",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '3'"
+}
+2020-12-28 09:32:20,166 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,166 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,166 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,171 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,172 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 8",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,172 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,172 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,172 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,177 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,177 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 2",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,177 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,177 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,177 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,183 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,183 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 6",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '3'"
+}
+2020-12-28 09:32:20,183 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,183 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,183 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,188 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,189 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 4",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,189 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,189 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,189 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,196 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"80101",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400912",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0802",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,196 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80101AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 1",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,196 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,197 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,197 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,209 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":"3",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,209 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 4",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,209 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,209 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,209 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,224 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,224 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 1",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,224 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,224 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,224 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,230 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,230 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 2",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,231 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,231 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,231 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,236 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,237 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 5",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,237 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,237 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,237 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,243 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,244 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 6",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,244 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,244 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,244 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,250 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,250 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 7",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,250 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,250 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,251 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,256 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,256 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 8",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,256 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,256 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,256 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,261 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126103",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"80102",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400916",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0803",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,262 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80102AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 3",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,262 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,262 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,262 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,276 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":"6",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":"6",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,277 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 1",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '1'"
+}
+2020-12-28 09:32:20,277 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,277 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,277 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,283 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,283 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 2",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '2'"
+}
+2020-12-28 09:32:20,284 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,284 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,284 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,293 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,294 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 3",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '3'"
+}
+2020-12-28 09:32:20,294 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,294 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,294 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,299 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,300 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 4",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '4'"
+}
+2020-12-28 09:32:20,300 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,300 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,300 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,305 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,306 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 5",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '5'"
+}
+2020-12-28 09:32:20,306 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,306 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,306 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:20,311 - root - DEBUG - 1 - {
+  "c_group":"司法制裁案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"司法制裁结案信息-aj",
+  "c_source_bm":"T_FB_AJ",
+  "c_source_dzdm":"10126203",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"80200",
+  "c_source_zdm":"N_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_SFZC_AJ_JA",
+  "c_target_dzdm":"11400920",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0804",
+  "c_target_zdm":"C_JAFS",
+  "lx":"more"
+}
+2020-12-28 09:32:20,311 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 80200AND  aj.N_YWLX IN (80000,80100,80101,80102,80200) AND  aj.D_JARQ is not nullAND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_JAFS = 6",
+  "targetDB":"select count(*) as data_count from aj.T_SFZC_AJ_JA  where C_YWLX = '0624' AND C_YWLX = '0511'AND  C_YWLX = '0507'AND  C_YWLX = '0314'AND  C_YWLX = '0220'AND  C_YWLX = '0406'AND  C_YWLX = '0629'AND  C_YWLX = '0607'AND  C_YWLX = '0106'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0112'AND  C_YWLX = '0325'AND  C_YWLX = '0326'AND  C_YWLX = '0332'AND  C_YWLX = '0627'AND  C_YWLX = '0102'AND  C_YWLX = '0323'AND  C_YWLX = '0506'AND  C_YWLX = '0515'AND  C_YWLX = '0222'AND  C_YWLX = '0116'AND  C_YWLX = '0405'AND  C_YWLX = '0501'AND  C_YWLX = '0803'AND  C_YWLX = '0402'AND  C_YWLX = '0232'AND  C_YWLX = '0519'AND  C_YWLX = '0201'AND  C_YWLX = '0306'AND  C_YWLX = '0711'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0609'AND  C_YWLX = '0703'AND  C_YWLX = '0210'AND  C_YWLX = '0521'AND  C_YWLX = '0505'AND  C_YWLX = '0608'AND  C_YWLX = '0308'AND  C_YWLX = '0401'AND  C_YWLX = '0107'AND  C_YWLX = '0312'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0320'AND  C_YWLX = '0114'AND  C_YWLX = '0202'AND  C_YWLX = '0804'AND  C_YWLX = '0219'AND  C_YWLX = '0118'AND  C_YWLX = '0208'AND  C_YWLX = '0409'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0704'AND  C_YWLX = '0310'AND  C_YWLX = '0330'AND  C_YWLX = '0103'AND  C_YWLX = '0207'AND  C_YWLX = '0230'AND  C_YWLX = '0215'AND  C_YWLX = '0217'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0113'AND  C_YWLX = '0229'AND  C_YWLX = '0802'AND  C_YWLX = '0110'AND  C_YWLX = '0333'AND  C_YWLX = '0319'AND  C_YWLX = '0509'AND  C_YWLX = '0214'AND  C_YWLX = '0329'AND  C_YWLX = '0311'AND  C_YWLX = '0502'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0407'AND  C_YWLX = '0328'AND  C_YWLX = '0301'AND  C_YWLX = '0503'AND  C_YWLX = '0318'AND  C_YWLX = '0404'AND  C_YWLX = '0231'AND  C_YWLX = '0108'AND  C_YWLX = '0101'AND  C_YWLX = '0105'AND  C_YWLX = '0508'AND  C_YWLX = '0523'AND  C_YWLX = '0304'AND  C_YWLX = '0117'AND  C_YWLX = '0307'AND  C_YWLX = '0518'AND  C_YWLX = '0305'AND  C_YWLX = '0625'AND  C_YWLX = '0221'AND  C_YWLX = '0524'AND  C_YWLX = '0512'AND  C_YWLX = '0520'AND  C_YWLX = '0522'AND  C_YWLX = '0302'AND  C_YWLX = '0316'AND  C_YWLX = '0514'AND  C_YWLX = '0216'AND  C_YWLX = '0510'AND  C_YWLX = '0504'AND  C_YWLX = '0211'AND  C_YWLX = '0702' AND  C_JAFS = '6'"
+}
+2020-12-28 09:32:20,311 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'nullAND'.
+
+2020-12-28 09:32:20,311 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:32:20,311 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

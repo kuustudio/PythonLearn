@@ -1,0 +1,1260 @@
+2020-12-26 13:56:24,210 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":"9",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,210 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '1'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{1}'"
+}
+2020-12-26 13:56:24,210 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,210 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,210 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,218 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,218 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '2'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{2}'"
+}
+2020-12-26 13:56:24,218 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,218 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,218 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,229 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,229 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '3'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{3}'"
+}
+2020-12-26 13:56:24,229 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,229 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,229 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,236 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,236 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '4'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{4}'"
+}
+2020-12-26 13:56:24,236 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,236 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,236 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,245 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '4'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{4}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,246 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '5'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{5}'"
+}
+2020-12-26 13:56:24,246 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,246 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,246 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,253 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '5'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{5}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,253 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '6'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{6}'"
+}
+2020-12-26 13:56:24,254 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,254 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,254 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,263 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '6'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{6}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,263 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '7'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{7}'"
+}
+2020-12-26 13:56:24,263 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,263 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,263 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,271 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '7'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{7}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,272 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '8'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{8}'"
+}
+2020-12-26 13:56:24,272 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,272 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,272 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,279 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101077",
+  "c_source_jtmz":" '8'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_CLJG",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401327",
+  "c_target_jtmz":" '{8}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_CLJG",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,279 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.C_CLJG = '9'",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_CLJG = '{255}'"
+}
+2020-12-26 13:56:24,279 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,279 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,279 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,292 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101063",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JLCS",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11400911",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JLCS",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,293 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JLCS = 1",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_JLCS = '1'"
+}
+2020-12-26 13:56:24,293 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,293 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,293 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,299 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101063",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_JLCS",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11400911",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_JLCS",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,299 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_JLCS = 2",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_JLCS = '2'"
+}
+2020-12-26 13:56:24,299 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,300 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,300 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,314 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101001",
+  "c_source_jtmz":"4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401329",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWRLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,314 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWRLX = 1",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWRLX = '1'"
+}
+2020-12-26 13:56:24,314 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,314 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,314 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,323 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101001",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401329",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWRLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,323 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWRLX = 2",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWRLX = '2'"
+}
+2020-12-26 13:56:24,323 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,323 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,323 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,332 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101001",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401329",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWRLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,333 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWRLX = 3",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWRLX = '3'"
+}
+2020-12-26 13:56:24,333 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,333 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,333 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,345 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101001",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWRLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401329",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWRLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,345 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWRLX = 4",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWRLX = '4'"
+}
+2020-12-26 13:56:24,345 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,345 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,345 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,925 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":"29",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,925 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 1",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '1'"
+}
+2020-12-26 13:56:24,925 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,925 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,925 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,932 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,933 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 21",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '9'"
+}
+2020-12-26 13:56:24,933 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,933 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,933 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,939 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 21",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '9'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,939 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 23",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '11'"
+}
+2020-12-26 13:56:24,940 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,940 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,940 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,946 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 23",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '11'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,946 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 25",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '13'"
+}
+2020-12-26 13:56:24,946 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,946 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,946 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,952 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 25",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '13'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,952 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 255",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:24,952 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,953 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,953 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,959 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 255",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,959 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 3",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '2'"
+}
+2020-12-26 13:56:24,959 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,959 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,959 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,965 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,965 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 6",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '3'"
+}
+2020-12-26 13:56:24,965 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,965 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,965 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,971 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,971 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 10",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '4'"
+}
+2020-12-26 13:56:24,971 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,971 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,972 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,978 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 10",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,978 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 12",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '5'"
+}
+2020-12-26 13:56:24,978 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,978 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,978 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,983 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 12",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,984 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 14",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '6'"
+}
+2020-12-26 13:56:24,984 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,984 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,984 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,989 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 14",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '6'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,990 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 11",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '8'"
+}
+2020-12-26 13:56:24,990 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,990 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,990 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:24,998 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 11",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '8'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:24,998 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 13",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '18'"
+}
+2020-12-26 13:56:24,998 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:24,998 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:24,998 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,006 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 13",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '18'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,007 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 16",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,007 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,007 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,007 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,016 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 16",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,016 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 15",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999009'"
+}
+2020-12-26 13:56:25,016 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,016 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,016 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,025 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 15",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999009'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,025 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 2",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,025 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,025 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,025 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,034 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,034 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 4",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,034 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,034 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,034 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,041 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,042 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 5",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,042 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,042 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,042 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,049 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,049 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 7",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '3'"
+}
+2020-12-26 13:56:25,050 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,050 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,050 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,058 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,058 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 8",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,058 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,059 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,059 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,067 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,067 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 9",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,068 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,068 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,068 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,075 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 9",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,075 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 17",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,075 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,076 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,076 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,082 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 17",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,083 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 18",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,083 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,083 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,083 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,091 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 18",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,091 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 19",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,091 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,091 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,091 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,098 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 19",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,098 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 20",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,098 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,098 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,099 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,104 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 20",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,105 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 22",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,105 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,105 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,105 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,111 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 22",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,112 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 24",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,112 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,112 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,112 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,121 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 24",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,121 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 26",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,121 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,121 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,122 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,128 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 26",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,128 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 27",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '999004'"
+}
+2020-12-26 13:56:25,128 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,129 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,129 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,135 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 27",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '999004'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,136 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 28",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,136 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,136 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,136 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-26 13:56:25,142 - root - DEBUG - 1 - {
+  "c_group":"fassxw",
+  "c_ms":"fassxw",
+  "c_sheet_mc":"赔偿妨碍诉讼行为-fassxw",
+  "c_source_bm":"T_PC_FASSXWCL",
+  "c_source_dzdm":"10101061",
+  "c_source_jtmz":" 28",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_XWLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_FASSXW_XWXX",
+  "c_target_dzdm":"11401750",
+  "c_target_jtmz":" '255'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_XWLX",
+  "lx":"Single"
+}
+2020-12-26 13:56:25,142 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_PC_FASSXWCL AS ywb JOIN T_PC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND NoneAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_XWLX = 29",
+  "targetDB":"select count(*) as data_count from fassxw.T_FASSXW_XWXX  where dt_cjsj<'2020-12-05' AND C_XWLX = '255'"
+}
+2020-12-26 13:56:25,142 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'aj'.
+
+2020-12-26 13:56:25,142 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-26 13:56:25,142 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

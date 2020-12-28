@@ -1,0 +1,160 @@
+2020-12-26 13:55:08,190 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 13:55:08,190 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 13:55:08,190 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 13:55:08,191 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 13:55:09,770 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 13:55:09,770 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 13:55:09,770 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 13:55:09,770 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 15:44:52,635 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 15:44:52,635 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 15:44:52,635 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 15:44:52,635 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 15:44:54,340 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 15:44:54,340 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 15:44:54,341 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 15:44:54,341 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 16:19:08,693 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 16:19:08,693 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 16:19:08,693 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 16:19:08,693 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 16:19:10,609 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 16:19:10,609 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 16:19:10,609 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 16:19:10,609 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 16:20:24,700 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 16:20:24,700 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 16:20:24,701 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 16:20:24,701 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================
+2020-12-26 16:20:26,390 - root - DEBUG - 1 - {
+  "c_group":"区际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"区际司法协助其他案件结案-aj",
+  "c_source_bm":"T_QT_AJ",
+  "c_source_dmlx":"bljg",
+  "c_source_zd":"C_JAFS",
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_AJ_JA",
+  "c_target_dmlx":"11401925",
+  "c_target_sjlx":"varchar",
+  "c_target_zd":"C_BLJG",
+  "c_target_zhl":null
+}
+2020-12-26 16:20:26,390 - root - INFO - 2 - Expecting value: line 1 column 1 (char 0)
+2020-12-26 16:20:26,391 - root - INFO - 2 - <class 'json.decoder.JSONDecodeError'>
+2020-12-26 16:20:26,391 - root - ERROR - 2 - 
+多值代码字段格式转Map失败 请检查上方数据
+Json格式化失败，请检查上方数据报错位置是否存在多余空格或其他非法字符
+==================================================

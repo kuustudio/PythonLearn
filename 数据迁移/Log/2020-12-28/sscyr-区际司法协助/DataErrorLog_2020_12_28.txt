@@ -1,0 +1,460 @@
+2020-12-28 09:32:07,947 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10107317",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"60107",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11400729",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0608",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,947 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,947 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,947 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,948 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10107317",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"60107",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11400729",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0608",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,948 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,948 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,948 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,957 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"12",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,957 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,957 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,957 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,958 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"30",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,958 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,958 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,958 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,959 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,959 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,959 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,959 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,960 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,960 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,960 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,960 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,961 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"3",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,961 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,961 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,961 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,962 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"4",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,963 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,963 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,963 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,964 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"5",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,964 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,964 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,964 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,965 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"6",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,965 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,965 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,966 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,966 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"7",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,966 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,967 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,967 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,967 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"8",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,968 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,968 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,968 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,968 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"9",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,969 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,969 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,969 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,969 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"10",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,970 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,970 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,970 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,971 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"11",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,971 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,971 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,971 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,971 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"13",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,972 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,972 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,972 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,972 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"14",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,973 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,973 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,973 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,973 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"15",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,974 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,974 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,974 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,975 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"16",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,975 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,975 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,975 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:32:07,976 - root - DEBUG - 1 - {
+  "c_group":"sscyr-区际司法协助",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"区际司法协助法标当事人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10123026",
+  "c_source_jtmz":"17",
+  "c_source_ywlx":"60308",
+  "c_source_zdm":null,
+  "c_system_type":"np",
+  "c_target_bm":"T_QJSFXZ_DSR",
+  "c_target_dzdm":"11401922",
+  "c_target_jtmz":"255",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0628",
+  "c_target_zdm":"C_SSDW",
+  "lx":"more"
+}
+2020-12-28 09:32:07,976 - root - INFO - 2 - unsupported operand type(s) for +: 'NoneType' and 'str'
+2020-12-28 09:32:07,976 - root - INFO - 2 - <class 'TypeError'>
+2020-12-28 09:32:07,976 - root - ERROR - 2 - 
+拼接Sql失败 请检查上方数据
+==================================================

@@ -1,0 +1,168 @@
+2020-12-28 09:30:36,569 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510116",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_BYCRSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400857",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BYCRSY",
+  "lx":"Single"
+}
+2020-12-28 09:30:36,569 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (70101,70102) AND  aj.D_JARQ IS NOT NULLAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  aj.C_BYCRSY = '1'",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where dt_cjsj<'2020-12-05' AND C_BYCRSY = '{1}'"
+}
+2020-12-28 09:30:36,569 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:36,569 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:36,569 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:36,574 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510116",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"C_BYCRSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400857",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_BYCRSY",
+  "lx":"Single"
+}
+2020-12-28 09:30:36,574 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.DT_SASJ <= '2020-10-01 23:59:59' AND aj.N_YWLX IN (70101,70102) AND  aj.D_JARQ IS NOT NULLAND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  aj.C_BYCRSY = '2'",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where dt_cjsj<'2020-12-05' AND C_BYCRSY = '{2}'"
+}
+2020-12-28 09:30:36,574 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:30:36,574 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:36,574 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:44,015 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510117",
+  "c_source_jtmz":"2",
+  "c_source_ywlx":"70000",
+  "c_source_zdm":"N_CRYJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400858",
+  "c_target_jtmz":"2",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0702",
+  "c_target_zdm":"C_CRYJ",
+  "lx":"more"
+}
+2020-12-28 09:31:44,016 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.N_YWLX IN (70101,70102)  AND aj.D_JARQ IS NOT NULLAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 70000AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_CRYJ = 1",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where C_YWLX = '0302' AND C_YWLX = '0506'AND  C_YWLX = '0702'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0109'AND  C_YWLX = '0512'AND  C_YWLX = '0504'AND  C_YWLX = '0516'AND  C_YWLX = '0407'AND  C_YWLX = '0505'AND  C_YWLX = '0301'AND  C_YWLX = '0513'AND  C_YWLX = '0119' AND  C_CRYJ = '1'"
+}
+2020-12-28 09:31:44,016 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:31:44,016 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:44,016 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:44,021 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510117",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"70000",
+  "c_source_zdm":"N_CRYJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400858",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0702",
+  "c_target_zdm":"C_CRYJ",
+  "lx":"more"
+}
+2020-12-28 09:31:44,021 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.N_YWLX IN (70101,70102)  AND aj.D_JARQ IS NOT NULLAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 70000AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_CRYJ = 2",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where C_YWLX = '0302' AND C_YWLX = '0506'AND  C_YWLX = '0702'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0109'AND  C_YWLX = '0512'AND  C_YWLX = '0504'AND  C_YWLX = '0516'AND  C_YWLX = '0407'AND  C_YWLX = '0505'AND  C_YWLX = '0301'AND  C_YWLX = '0513'AND  C_YWLX = '0119' AND  C_CRYJ = '2'"
+}
+2020-12-28 09:31:44,022 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:31:44,022 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:44,022 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:44,030 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510117",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"70000",
+  "c_source_zdm":"N_CRYJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400864",
+  "c_target_jtmz":"1",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0703",
+  "c_target_zdm":"C_CRYJ",
+  "lx":"more"
+}
+2020-12-28 09:31:44,031 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.N_YWLX IN (70101,70102)  AND aj.D_JARQ IS NOT NULLAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 70000AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_CRYJ = 2",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where C_YWLX = '0302' AND C_YWLX = '0506'AND  C_YWLX = '0702'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0109'AND  C_YWLX = '0512'AND  C_YWLX = '0504'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0407'AND  C_YWLX = '0505'AND  C_YWLX = '0301'AND  C_YWLX = '0513'AND  C_YWLX = '0119' AND  C_CRYJ = '2'"
+}
+2020-12-28 09:31:44,031 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:31:44,031 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:44,031 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:44,035 - root - DEBUG - 1 - {
+  "c_group":"国际司法协助案件",
+  "c_ms":"aj",
+  "c_sheet_mc":"国际司法协助民事案件结案-aj",
+  "c_source_bm":"T_MS_AJ",
+  "c_source_dzdm":"101510117",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"70000",
+  "c_source_zdm":"N_CRYJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_GJSFXZ_AJ_JA",
+  "c_target_dzdm":"11400864",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"varchar",
+  "c_target_ywlx":"0703",
+  "c_target_zdm":"C_CRYJ",
+  "lx":"more"
+}
+2020-12-28 09:31:44,036 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_AJ AS aj  where aj.N_YWLX IN (70101,70102)  AND aj.D_JARQ IS NOT NULLAND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 70000AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  aj.N_CRYJ = 1",
+  "targetDB":"select count(*) as data_count from aj.T_GJSFXZ_AJ_JA  where C_YWLX = '0302' AND C_YWLX = '0506'AND  C_YWLX = '0702'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0109'AND  C_YWLX = '0512'AND  C_YWLX = '0504'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0407'AND  C_YWLX = '0505'AND  C_YWLX = '0301'AND  C_YWLX = '0513'AND  C_YWLX = '0119' AND  C_CRYJ = '1'"
+}
+2020-12-28 09:31:44,036 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Incorrect syntax near 'NULLAND'.
+
+2020-12-28 09:31:44,036 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:44,036 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

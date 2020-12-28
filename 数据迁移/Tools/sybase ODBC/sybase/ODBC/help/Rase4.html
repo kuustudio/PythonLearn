@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="WWH 3.0 Help Template" />
+  <meta name="LASTUPDATED" content="02/20/03 12:36:52" />
+  <title>Connecting to a Data Source Using a Logon Dialog Box</title>
+  <link rel="StyleSheet" href="document.css" type="text/css" />
+  <link rel="StyleSheet" href="catalog.css" type="text/css" />
+<script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+
+  <script type="text/javascript" language="JavaScript1.2">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+  </script>
+ </head>
+
+ <body onLoad="WWHUpdate();">
+
+ <blockquote>
+<a name="wp510192"> </a><h1 class="pNewHTMLPageNoNum">
+Connecting to a Data Source Using a Logon Dialog Box
+</h1>
+<hr /><a name="wp510202"> </a><p class="pBody">
+Some ODBC applications display a Logon dialog box when you are connecting to a data source. In these cases, the data source name has already been specified. 
+</p>
+<a name="wp510206"> </a><p class="pBody">
+In the Logon dialog box, perform the following steps:
+</p>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp540087"> </a><div class="pSmartList1"><li>In the Network Library field, select the name of the network library. This specifies which network protocol to use. Valid values are Winsock and NamedPipes.</li></div><a name="wp510210"> </a><div class="pSmartList1"><li>In the Network Address field, type the network address, which depends on which network protocol is chosen under Network Library and on the Sybase server. If you have chosen Winsock, specify an IP address as follows: &quot;&lt;servername or IP address&gt;, &lt;port number&gt;&quot;. For example, if your network supports named servers, you may specify an address such as &quot;Sybaseserver, 5000&quot;. You may also specify the IP address directly such as &quot;199.226.224.34, 5000&quot;.</li></div><a name="wp527161"> </a><p class="pBodyIndent12pxBeforeAfter">
+If you have chosen NamedPipes as the network protocol, you must specify the pipe address of the server.  For example, &quot;\\machine1\sybase\pipe\query&quot;.
+</p>
+<a name="wp527108"> </a><div class="pSmartList1"><li>If required, type your case-sensitive login ID.</li></div><a name="wp510212"> </a><div class="pSmartList1"><li>If required, type your case-sensitive password for the system.</li></div><a name="wp510214"> </a><div class="pSmartList1"><li>Select the name from the Database drop-down list, which displays the names you specified in the ODBC Sybase Wire Protocol Driver Setup dialog box.</li></div><a name="wp559566"> </a><div class="pSmartList1"><li>Select the Use SSL check box to use a secure socket layer (SSL) connection. Then, complete the Trusted Roots File Name field by typing the location and name of the trusted roots file.</li></div><a name="wp510216"> </a><div class="pSmartList1"><li>Click <b class="cBold">OK</b> to complete the logon and to update the values in the system information.</li></div></ol></div>
+ </blockquote>
+
+ <hr />
+
+<script type="text/javascript" language="JavaScript1.2">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+  </script>
+
+ </body>
+</html>

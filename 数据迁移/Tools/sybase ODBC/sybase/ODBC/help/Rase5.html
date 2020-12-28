@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="WWH 3.0 Help Template" />
+  <meta name="LASTUPDATED" content="05/21/03 15:08:20" />
+  <title>Connecting to a Data Source Using a Connection String</title>
+  <link rel="StyleSheet" href="document.css" type="text/css" />
+  <link rel="StyleSheet" href="catalog.css" type="text/css" />
+<script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/context.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/towwhdir.js"></script>
+  <script type="text/javascript" language="JavaScript1.2" src="wwhdata/common/wwhpagef.js"></script>
+
+  <script type="text/javascript" language="JavaScript1.2">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+  </script>
+ </head>
+
+ <body onLoad="WWHUpdate();">
+
+ <blockquote>
+<a name="wp510218"> </a><h1 class="pNewHTMLPageNoNum">
+Connecting to a Data Source Using a Connection String
+</h1>
+<hr /><a name="wp510228"> </a><p class="pBody">
+If your application requires a connection string to connect to a data source, you must specify the data source name that tells the driver which section in the system information to use for the default connection information. Optionally, you may specify <em class="cEmphasis">attribute=value</em> pairs in the connection string to override the default values stored in the system information. These values are not written to the system information.
+</p>
+<a name="wp510230"> </a><p class="pBody">
+You can specify either long or short names in the connection string. The connection string has the form:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+DSN=<code><em>data_source_name</em></code>[;<code><em>attribute=value</em></code>[;<code><em>attribute=value</em></code>]...]<a name="wp537882"> </a>
+</pre></div>
+<a name="wp510234"> </a><p class="pBody">
+An example of a connection string for Sybase is:
+</p>
+<div class="pPreformatted"><pre class="pPreformatted">
+DSN=SYS11 TABLES;SRVR=QESRVR;DB=PAYROLL;UID=JOHN;PWD=XYZZY<a name="wp535086"> </a>
+</pre></div>
+<a name="wp535090"> </a><p class="pBody">
+<a  href="Rase5.html#wp540679">Table&#160;2-1</a> gives the long and short names for each attribute, as well as a description. 
+</p>
+<a name="wp527773"> </a><p class="pBody">
+The defaults listed in the table are initial defaults that apply when no value is specified in either the connection string or in the data source definition in the system information. If you specified a value for the attribute when configuring the data source, that value is the default.
+</p>
+<a name="wp527454"> </a><p class="pBody">
+</p><div align="left">
+<table border="1">
+  <caption><a name="wp540679"> </a><div class="pTableTitleBold">
+Table 2-1.  Sybase Wire Protocol Connection String Attributes&#160;
+</div>
+</caption>
+  <tr align="center">    <th><a name="wp540683"> </a><div class="pCellHeading">
+Attribute
+</div>
+</th>
+    <th><a name="wp540685"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp540711"> </a><div class="pCellBody">
+ApplicationName (APP)
+</div>
+</td>
+    <td><a name="wp540713"> </a><div class="pCellBody">
+The name used by Sybase to identify your application.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540715"> </a><div class="pCellBody">
+ApplicationUsingThreads (AUT)
+</div>
+</td>
+    <td><a name="wp540717"> </a><div class="pCellBody">
+ApplicationUsingThreads={0 | 1}. Ensures that the driver works with multi-threaded applications. 
+</div>
+<a name="wp540718"> </a><div class="pCellBody">
+When set to 1 (the initial default), the driver is thread-safe. 
+</div>
+<a name="wp540719"> </a><div class="pCellBody">
+When using the driver with single-threaded applications, you can set this option to 0 to avoid additional processing required for ODBC thread-safety standards.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540721"> </a><div class="pCellBody">
+ArraySize (AS)
+</div>
+</td>
+    <td><a name="wp540723"> </a><div class="pCellBody">
+The number of rows the driver retrieves from the server for a fetch. This is not the number of rows given to the user. This increases performance by reducing network traffic. 
+</div>
+<a name="wp540724"> </a><div class="pCellBody">
+The initial default is 50 rows.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540726"> </a><div class="pCellBody">
+Charset (CS)
+</div>
+</td>
+    <td><a name="wp540728"> </a><div class="pCellBody">
+The name of a character set. This character set must be installed on the Sybase server. The default is the setting on the Sybase server. For this driver to support Unicode, this attribute must be set to UTF-8. Refer to the Sybase server documentation for a list of valid character set names.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540730"> </a><div class="pCellBody">
+CursorCacheSize (CCS)
+</div>
+</td>
+    <td><a name="wp540732"> </a><div class="pCellBody">
+The number of connections that the connection cache can hold. To set the connection cache, you must set the SelectMethod attribute to 1. Increasing the connection cache may increase performance of some applications but requires additional database resources.
+</div>
+<a name="wp540733"> </a><div class="pCellBody">
+The initial default is 1 (one cursor). 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540735"> </a><div class="pCellBody">
+Database (DB)
+</div>
+</td>
+    <td><a name="wp540737"> </a><div class="pCellBody">
+The name of the database to which you want to connect.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540739"> </a><div class="pCellBody">
+DataSourceName (DSN)
+</div>
+</td>
+    <td><a name="wp540741"> </a><div class="pCellBody">
+A string that identifies a single connection to a Sybase database. Examples include &quot;Accounting&quot; or &quot;Sys10-Serv1.&quot;
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540743"> </a><div class="pCellBody">
+DefaultLongDataBuffLen (DLDBL)
+</div>
+</td>
+    <td><a name="wp540745"> </a><div class="pCellBody">
+An integer value that specifies, in 1024-byte multiples, the maximum length of data fetched from a TEXT or IMAGE column. You will need to increase this value if the total size of any long data exceeds 1 MB.
+</div>
+<a name="wp540746"> </a><div class="pCellBody">
+The default is 1024.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540752"> </a><div class="pCellBody">
+DistributedTransaction<br />Model (DTM)
+</div>
+<a name="wp540756"> </a><div class="pCellBody">
+<br />
+</div>
+</td>
+    <td><a name="wp540758"> </a><div class="pCellBody">
+DistributedTransactionModel={XA Protocol | Native OLE}. Determines which model is used for distributed transaction support. The initial default is XA Protocol.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540760"> </a><div class="pCellBody">
+EnableDescribe<br />Param (EDP)
+</div>
+</td>
+    <td><a name="wp540762"> </a><div class="pCellBody">
+EnableDescribeParam={0 | 1}. Determines whether the ODBC API function SQLDescribeParam is enabled.
+</div>
+<a name="wp540763"> </a><div class="pCellBody">
+When set to 0 (the initial default), SQLDescribeParam is disabled.
+</div>
+<a name="wp540764"> </a><div class="pCellBody">
+When set to 1, SQLDescribeParam is enabled, which allows an application to describe parameters in SQL statements and in stored procedure calls. To use this option, OptimizePrepare must be set to 0 or 1, and the SQL statement must not include long parameters. This attribute should be set to 1 when using Microsoft Remote Data Objects (RDO) to access data.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540766"> </a><div class="pCellBody">
+EnableQuoted<br />Identifiers (EQI)
+</div>
+</td>
+    <td><a name="wp540768"> </a><div class="pCellBody">
+EnableQuotedIdentifiers={0 | 1}. Enables quoted identifiers.
+</div>
+<a name="wp540769"> </a><div class="pCellBody">
+When set to 0 (the initial default), quoted identifiers are disabled.
+</div>
+<a name="wp540770"> </a><div class="pCellBody">
+When set to 1, quoted identifiers are enabled.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540772"> </a><div class="pCellBody">
+FailoverNetworkAddress (FNA)
+</div>
+</td>
+    <td><a name="wp540774"> </a><div class="pCellBody">
+Specifies the address of the High Availability (HA) Failover server to be used in the event of a connection loss. The driver detects the dropped connection and automatically reconnects to the HA Failover server specified by this attribute. This attribute is valid only for Sybase version 12 or higher servers that have the High Availability Failover feature enabled.
+</div>
+<a name="wp540775"> </a><div class="pCellBody">
+See the previous description of the Network Address attribute for an explanation of valid values.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540777"> </a><div class="pCellBody">
+Interfaces File (IF)
+</div>
+</td>
+    <td><a name="wp540779"> </a><div class="pCellBody">
+Specifies the path name of the Interfaces file. If you do not specify a value for this attribute, but specify a value for the Interfaces File Server Name attribute, the driver looks for the path name of the Interfaces file in the Registry under HKEY_LOCAL_MACHINE\SOFTWARE\DataDirect\InterfacesFile. If this Registry value is empty, then the driver attempts to open the SQL.INI file found in the same directory as the driver and use it as the Interfaces file.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp558935"> </a><div class="pCellBody">
+Interfaces File Server Name (IFSN)
+</div>
+</td>
+    <td><a name="wp558937"> </a><div class="pCellBody">
+ Specifies the name of the section in the Interfaces file that contains the network connection information for the Sybase server you want to access. The section name typically is the host name of the server that contains the Sybase Server you want to access.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp558931"> </a><div class="pCellBody">
+InitializationString (IS)
+</div>
+</td>
+    <td><a name="wp558933"> </a><div class="pCellBody">
+InitializationString={<code><em>Sybase set commands;...</em></code>}. Supports the execution of Sybase commands at connect time. Multiple commands must be separated by semicolons.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540781"> </a><div class="pCellBody">
+Language (LANG)
+</div>
+</td>
+    <td><a name="wp540783"> </a><div class="pCellBody">
+The national language. This language must be installed on the Sybase server. 
+</div>
+<a name="wp540784"> </a><div class="pCellBody">
+The initial default is English.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540786"> </a><div class="pCellBody">
+LogonID (UID)
+</div>
+</td>
+    <td><a name="wp540788"> </a><div class="pCellBody">
+The default logon ID used to connect to your Sybase database. This ID is case-sensitive. A logon ID is required only if security is enabled on your database. If so, contact your system administrator to get your logon ID. 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540790"> </a><div class="pCellBody">
+NetworkAddress (NA)
+</div>
+</td>
+    <td><a name="wp540792"> </a><div class="pCellBody">
+The network address depends on which network protocol is chosen under Network Library Name and on the Sybase server. If you have chosen Winsock, specify an IP address as follows: &quot;<code><em>servername </em></code>or<code><em> IP address, port number</em></code>&quot;. For example, if your network supports named servers, you may specify an address such as &quot;Sybaseserver, 5000&quot;. You may also specify the IP address directly such as &quot;199.226.224.34, 5000&quot;.
+</div>
+<a name="wp540793"> </a><div class="pCellBody">
+If you have chosen NamedPipes as the network protocol, you must specify the pipe address of the server. For example, &quot;\\machine1\sybase\pipe\query&quot;. 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540795"> </a><div class="pCellBody">
+NetworkLibraryName (NLN)<br />
+</div>
+</td>
+    <td><a name="wp540801"> </a><div class="pCellBody">
+NetworkLibraryName={Winsock | NamedPipes}. The name of the network library. This specifies which network protocol to use.
+</div>
+<a name="wp540802"> </a><div class="pCellBody">
+The initial default is Winsock.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540806"> </a><div class="pCellBody">
+OptimizePrepare (OP)
+</div>
+</td>
+    <td><a name="wp540808"> </a><div class="pCellBody">
+OptimizePrepare={0 | 1 | 2 | 3}. Determines whether stored procedures are created on the server for calls to SQLPrepare.
+</div>
+<a name="wp540809"> </a><div class="pCellBody">
+When set to 0, stored procedures are created for every call to SQLPrepare. This setting can result in decreased performance when processing statements that do not contain parameters.
+</div>
+<a name="wp540810"> </a><div class="pCellBody">
+When set to 1 (the initial default), the driver creates stored procedures only if the statement contains parameters. Otherwise, the statement is cached and run directly at the time of SQLExecute. 
+</div>
+<a name="wp540811"> </a><div class="pCellBody">
+When set to 2, stored procedures are never created.  The driver caches the statement, executes it directly at the time of SQLExecute, and reports any syntax or similar errors at the time of SQLExecute.
+</div>
+<a name="wp540812"> </a><div class="pCellBody">
+When set to 3, stored procedures are never created. This is identical to value 2 except that any syntax or similar errors are returned at the time of SQLPrepare instead of SQLExecute. Use this setting only if you must have syntax errors reported at the time of SQLPrepare.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540815"> </a><div class="pCellBody">
+PacketSize (PS)
+</div>
+</td>
+    <td><a name="wp540817"> </a><div class="pCellBody">
+PacketSize={-1 | 0 | <em class="cEmphasis">x</em>}. Determines the number of bytes per network packet transferred from the database server to the client. The correct setting of this attribute can improve performance.
+</div>
+<a name="wp540818"> </a><div class="pCellBody">
+When set to -1, the driver computes the maximum allowable packet size on the first connect to the data source and saves the value in the system information.
+</div>
+<a name="wp540819"> </a><div class="pCellBody">
+When set to 0 (the initial default), the driver uses the default packet size as specified in the Sybase server configuration.
+</div>
+<a name="wp540820"> </a><div class="pCellBody">
+When set to <em class="cEmphasis">x</em>, an integer from 1 to 1024, the driver uses a packet size represented by <em class="cEmphasis">x</em> times 512 bytes. For example, PacketSize=6 means to set the packet size to 6 * 512 bytes (3072 bytes).
+</div>
+<a name="wp540821"> </a><div class="pCellBody">
+To take advantage of this connection attribute, you must configure the Sybase server for a maximum network packet size greater than or equal to the value you specified for PacketSize. For example:
+</div>
+<a name="wp540822"> </a><div class="pCellBody">
+<code><em>sp_configure &quot;maximum network packet size&quot;, 5120</em></code>
+</div>
+<a name="wp540823"> </a><div class="pCellBody">
+<code><em>reconfigure</em></code>
+</div>
+<a name="wp540824"> </a><div class="pCellBody">
+<code><em>Restart Sybase Server</em></code>
+</div>
+<a name="wp540825"> </a><div class="pCellBody">
+NOTE: The ODBC specification specifies a connect option, SQL_PACKET_SIZE, that offers this same functionality. To avoid conflicts with applications that may set both the connection string attribute and the ODBC connect option, they have been defined as mutually exclusive. If PacketSize is specified, you will receive a message &quot;Driver Not Capable&quot; if you attempt to call SQL_PACKET_SIZE. If you do not set PacketSize, then application calls to SQL_PACKET_SIZE are accepted by the driver.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540827"> </a><div class="pCellBody">
+Password (PWD)
+</div>
+</td>
+    <td><a name="wp540829"> </a><div class="pCellBody">
+A case-sensitive password.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp562502"> </a><div class="pCellBody">
+PasswordEncryption (PE)
+</div>
+</td>
+    <td><a name="wp562504"> </a><div class="pCellBody">
+Password Encryption={0 | 1}. A value that determines whether password encryption can be performed from the ODBC driver to the server. When set to 0, password encryption is disabled. When set to 1, password encryption is enabled.
+</div>
+<a name="wp562520"> </a><div class="pCellBody">
+The initial default is 0.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540831"> </a><div class="pCellBody">
+RaiseErrorPosition<br />Behavior (REPB)
+</div>
+</td>
+    <td><a name="wp540833"> </a><div class="pCellBody">
+RaiseErrorPositionBehavior={0 | 1}. Specifies when the error is returned and where the cursor is positioned when raiserror is encountered.
+</div>
+<a name="wp540834"> </a><div class="pCellBody">
+When set to 0 (the initial default), raiserror is handled separately from surrounding statements. The error is returned when raiserror is processed via SQLExecute, SQLExecDirect, or SQLMoreResults. The result set is empty.
+</div>
+<a name="wp540835"> </a><div class="pCellBody">
+When set to 1 (MS compatible), raiserror is handled with the next statement. The error is returned when the next statement is processed; the cursor is positioned on the first row of subsequent result set. This could result in multiple raiserrors being returned on a single execute.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540837"> </a><div class="pCellBody">
+SelectMethod (SM)
+</div>
+</td>
+    <td><a name="wp540839"> </a><div class="pCellBody">
+SelectMethod={0 | 1}. Determines whether database cursors are used for Select statements. 
+</div>
+<a name="wp540840"> </a><div class="pCellBody">
+When set to 0 (the initial default), database cursors are used. In some cases performance degradation can occur when performing large numbers of sequential Select statements because of the amount of overhead associated with creating database cursors.
+</div>
+<a name="wp540841"> </a><div class="pCellBody">
+When set to 1, Select statements are run directly without using database cursors, and the data source is limited to one active statement.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541596"> </a><div class="pCellBody">
+SybaseLDAPURL (SLURL)
+</div>
+</td>
+    <td><a name="wp541598"> </a><div class="pCellBody">
+Defines the Sybase LDAP URL that specifies the search operation that will be used to retrieve information from an LDAP directory. This URL includes host, port, database, distinguished name, and password. The format of this LDAP URL must adhere to RFC 2255.
+</div>
+<a name="wp541743"> </a><div class="pCellBody">
+This attribute is valid only if the data source you are using for your connection is configured to use LDAP or you have <a  href="Rase5.html#wp541011">&quot;UseSybaseLDAPSchema (USLDAP)&quot;</a> set to 1 in your connection string. 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541630"> </a><div class="pCellBody">
+SybaseServerName (SSN)
+</div>
+</td>
+    <td><a name="wp541632"> </a><div class="pCellBody">
+Defines the unique identifier for the LDAP directory entry where connection information is defined.
+</div>
+<a name="wp541748"> </a><div class="pCellBody">
+This attribute is valid only if the data source you are using for your connection is configured to use LDAP or you have <a  href="Rase5.html#wp541011">&quot;UseSybaseLDAPSchema (USLDAP)&quot;</a> set to 1 in your connection string.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540843"> </a><div class="pCellBody">
+TightlyCoupled<br />DistributedTransactions (TCDT)
+</div>
+<a name="wp540847"> </a><div class="pCellBody">
+<br />
+</div>
+</td>
+    <td><a name="wp540849"> </a><div class="pCellBody">
+TightlyCoupledDistributedTransactions={0 | 1}. Determines whether the driver uses tightly coupled distributed transactions when connected to an Sybase version 12 or higher database. When set to 1 (the initial default), the driver uses this type of transaction and multiple connections within the same distributed transaction do not obey each other&#8217;s locks.
+</div>
+<a name="wp540850"> </a><div class="pCellBody">
+When set to 0, the overall performance of the driver is better, but multiple connections within the same distributed transaction may hang each other because the connections do not obey each other&#8217;s locks.
+</div>
+<a name="wp540851"> </a><div class="pCellBody">
+This attribute is valid only when the driver is enlisted in a distributed transaction or when it is connected to a Sybase version 12 or higher database. Otherwise, this attribute is ignored.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541015"> </a><div class="pCellBody">
+TrustedRootsFileName (TRFN)
+</div>
+</td>
+    <td><a name="wp541017"> </a><div class="pCellBody">
+Specifies the location and name of the trusted roots file used for the SSL connection.
+</div>
+<a name="wp560292"> </a><div class="pCellBody">
+A trusted roots file contains a list of known and trusted CAs (certificate authorities). This file is similar in format to a certificate file, except it contains certificates for CAs known to the entity (client applications, servers, etc.). This file is maintained using a standard ASCII text editor.
+</div>
+<a name="wp560289"> </a><div class="pCellBody">
+If you are using an SSL connection, you must specify the name of a trusted roots file. To specify the use of an SSL connection in a connection string, you must set <a  href="Rase5.html#wp541007">&quot;UseSSL (USSL)&quot;</a> to 1.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541634"> </a><div class="pCellBody">
+UseLDAPHAFailoverServer (ULDAPHA)
+</div>
+</td>
+    <td><a name="wp541636"> </a><div class="pCellBody">
+UseLDAPHAFailoverServer={0 | 1}. Determines whether the driver uses the High Availability (HA) Failover server specified in the sybaseHAServernam attribute in the LDAP directory entry in the event of a connection loss.
+</div>
+<a name="wp541645"> </a><div class="pCellBody">
+When set to 0 (the initial default), the driver does not use the HA Failover server specified on the LDAP server. This attribute is valid only if you are connecting to a Sybase version 12 or higher server that has the High Availability Failover feature enabled.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541011"> </a><div class="pCellBody">
+UseSybaseLDAPSchema (USLDAP)
+</div>
+</td>
+    <td><a name="wp541068"> </a><div class="pCellBody">
+UseSybaseLDAPSchema={0 | 1}. Determines whether the driver uses an LDAP directory entry to retrieve connection information. 
+</div>
+<a name="wp560339"> </a><div class="pCellBody">
+When set to 0 (the initial default), the driver does not use an LDAP directory entry to retrieve connection information; instead, the driver uses a data source to retrieve connection information.
+</div>
+<a name="wp560340"> </a><div class="pCellBody">
+When set to 1, you must specify values for <a  href="Rase5.html#wp541596">&quot;SybaseLDAPURL (SLURL)&quot;</a> and <a  href="Rase5.html#wp541630">&quot;SybaseServerName (SSN)&quot;</a> in the data source you are using for connection. These attributes define the location of the LDAP server and the LDAP directory entry where the connection information is defined. 
+</div>
+<a name="wp541827"> </a><div class="pCellBody">
+See <a  href="Rase7.html#wp559572">&quot;Using LDAP&quot;</a> for information about the implementation of LDAP in the Sybase Wire Protocol driver.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp541007"> </a><div class="pCellBody">
+UseSSL (USSL)
+</div>
+</td>
+    <td><a name="wp560302"> </a><div class="pCellBody">
+UseSSL={0 | 1}. Determines whether the driver uses a secure socket layer (SSL) connection. SSL is an industry standard for sending encrypted data over client-to-server and server-to-server connections. Connect ODBC supports the IETF TLS (Transport Layer Security) 1.0 standard.
+</div>
+<a name="wp560282"> </a><div class="pCellBody">
+When set to 0 (the initial default), the driver does not use an SSL connection. If you are using an SSL connection, you must specify the name of a trusted roots file (see <a  href="Rase5.html#wp541015">&quot;TrustedRootsFileName (TRFN)&quot;</a>).
+</div>
+<a name="wp541369"> </a><div class="pCellBody">
+When set to 1, the driver uses an SSL connection IF you are using TCP/IP as the network protocol.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp540853"> </a><div class="pCellBody">
+WorkstationID (WKID)
+</div>
+</td>
+    <td><a name="wp540855"> </a><div class="pCellBody">
+The workstation ID used by the client.
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBody">
+</p>
+ </blockquote>
+
+ <hr />
+
+<script type="text/javascript" language="JavaScript1.2">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+  </script>
+
+ </body>
+</html>

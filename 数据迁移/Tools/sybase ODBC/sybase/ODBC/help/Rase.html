@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40" xml:lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Rase_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Rase_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>The Sybase Wire Protocol Driver</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Shou-yen Joseph Teng</o:Author>
+  <o:LastAuthor>Shou-yen Joseph Teng</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2003-09-04T21:21:00Z</o:Created>
+  <o:LastSaved>2003-09-04T21:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>61</o:Words>
+  <o:Characters>353</o:Characters>
+  <o:Company>Sybase, Inc.</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>433</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=document.css>
+<link rel=Stylesheet type="text/css" media=all href=catalog.css>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+code
+	{mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.pbody, li.pbody, div.pbody
+	{mso-style-name:pbody;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodybold, li.pbodybold, div.pbodybold
+	{mso-style-name:pbodybold;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyindent12pxbeforeafter, li.pbodyindent12pxbeforeafter, div.pbodyindent12pxbeforeafter
+	{mso-style-name:pbodyindent12pxbeforeafter;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyrelative, li.pbodyrelative, div.pbodyrelative
+	{mso-style-name:pbodyrelative;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pbodyrelativesub, li.pbodyrelativesub, div.pbodyrelativesub
+	{mso-style-name:pbodyrelativesub;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented1, li.pindented1, div.pindented1
+	{mso-style-name:pindented1;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented2, li.pindented2, div.pindented2
+	{mso-style-name:pindented2;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented3, li.pindented3, div.pindented3
+	{mso-style-name:pindented3;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented4, li.pindented4, div.pindented4
+	{mso-style-name:pindented4;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindented5, li.pindented5, div.pindented5
+	{mso-style-name:pindented5;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.pindentedrelative, li.pindentedrelative, div.pindentedrelative
+	{mso-style-name:pindentedrelative;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel1ix, li.plevel1ix, div.plevel1ix
+	{mso-style-name:plevel1ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel2ix, li.plevel2ix, div.plevel2ix
+	{mso-style-name:plevel2ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel3ix, li.plevel3ix, div.plevel3ix
+	{mso-style-name:plevel3ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel4ix, li.plevel4ix, div.plevel4ix
+	{mso-style-name:plevel4ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.plevel5ix, li.plevel5ix, div.plevel5ix
+	{mso-style-name:plevel5ix;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.psyntaxembed, li.psyntaxembed, div.psyntaxembed
+	{mso-style-name:psyntaxembed;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Batang;}
+p.ptoc2, li.ptoc2, div.ptoc2
+	{mso-style-name:ptoc2;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc3, li.ptoc3, div.ptoc3
+	{mso-style-name:ptoc3;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc4, li.ptoc4, div.ptoc4
+	{mso-style-name:ptoc4;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+p.ptoc5, li.ptoc5, div.ptoc5
+	{mso-style-name:ptoc5;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:Batang;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:46496111;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1076487920 -401280326 -1926092560 -461241400 2106629792 -595005478 1070771682 871117608 115739964 495090628;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/context.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/towwhdir.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="wwhdata/common/wwhpagef.js">
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    // Set reference to top level help frame
+    //
+    var  WWHFrame = WWHGetWWHFrame("");
+   // -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta http-equiv=Content-Style-Type content="text/css">
+<meta name=TEMPLATEBASE content="WWH 3.0 Help Template">
+<meta name=LASTUPDATED content="02/20/03 12:36:52">
+</head>
+
+<body bgcolor="#ffffee" lang=EN-US style='tab-interval:.5in'
+onload="WWHUpdate();">
+
+<div class=Section1>
+
+<h1 style='margin-right:.5in;margin-left:.5in'><a name=wp510080></a><span
+lang=EN style='font-size:19.5pt;font-family:Arial;color:#003366;mso-ansi-language:
+EN'>The Sybase Wire Protocol Driver <o:p></o:p></span></h1>
+
+
+<div class=MsoNormal align=center style='margin-right:.5in;mso-margin-top-alt:
+auto;mso-margin-bottom-alt:auto;margin-left:.5in;text-align:center'><span
+lang=EN style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp530213></a><span
+lang=EN style='mso-ansi-language:EN'>The Sybase ASE ODBC driver (or
+&quot;Sybase Wire Protocol driver&quot;) supports the following Sybase database
+servers: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo1;tab-stops:
+list .5in'><a name=wp543412></a><![if !supportLists]><span lang=EN
+style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:Symbol;mso-bidi-font-family:
+Arial;color:black;mso-ansi-language:EN'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN style='font-size:9.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN'>Sybase Adaptive Server 11.5 and higher<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:1.0in;text-indent:-.25in;mso-list:l0 level1 lfo1;tab-stops:
+list .5in'><a name=wp543453></a><![if !supportLists]><span lang=EN
+style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:Symbol;mso-bidi-font-family:
+Arial;color:black;mso-ansi-language:EN'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN style='font-size:9.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN'>Sybase Adaptive Server Enterprise 12.0, 12.5,
+and 12.5.1<o:p></o:p></span></p>
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp560465></a><span
+lang=EN style='mso-ansi-language:EN'>The Sybase Wire Protocol driver is
+supported in the Windows environments. <o:p></o:p></span></p>
+
+<p class=pbody style='margin-right:.5in;margin-left:.5in'><a name=wp560469></a><span
+lang=EN style='mso-ansi-language:EN'>See the README file shipped with your Sybase
+product for the file name of the Sybase Wire Protocol driver. <o:p></o:p></span></p>
+
+
+<div class=MsoNormal align=center style='text-align:center'><span lang=EN
+style='mso-ansi-language:EN'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+
+<p class=MsoNormal><span lang=EN style='mso-ansi-language:EN'><script language="JavaScript1.2"  type="text/javascript">
+   <!--
+    document.write(WWHRelatedTopicsDivTag() + WWHPopupDivTag());
+   // -->
+</script></span></p>
+
+</div>
+
+</body>
+
+</html>

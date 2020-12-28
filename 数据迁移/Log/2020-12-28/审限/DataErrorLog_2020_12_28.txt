@@ -1,0 +1,308 @@
+2020-12-28 09:31:34,050 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"其他审限事件-sx",
+  "c_source_bm":"T_YWGY_SX_SXSJ",
+  "c_source_dzdm":"sjlb",
+  "c_source_jtmz":"6",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LB",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_SXSJ",
+  "c_target_dzdm":"11401228",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_LB",
+  "lx":"Single"
+}
+2020-12-28 09:31:34,050 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_YWGY_SX_SXSJ sx JOIN T_YWGY_SX_HZSJ ywb ON sx.C_BH_HZSJ = ywb.C_BH JOIN T_QT_AJ aj ON ywb.C_BH_BS = aj.C_BH  where aj.DT_SASJ >= '2017-06-01 00:00:00' AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  sx.N_LB != 4 AND  aj.N_YWLX IN (20901,31001,40501,50306,50301,60305,60309) AND  ywb.N_LB = 1",
+  "targetDB":"select count(*) as data_count from sx.T_SX_SXSJ  where dt_cjsj<'2020-12-05' AND C_LB = '1'"
+}
+2020-12-28 09:31:34,050 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:31:34,050 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:34,050 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:34,063 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"其他审限事件-sx",
+  "c_source_bm":"T_YWGY_SX_SXSJ",
+  "c_source_dzdm":"sjlb",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LB",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_SXSJ",
+  "c_target_dzdm":"11401228",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_LB",
+  "lx":"Single"
+}
+2020-12-28 09:31:34,063 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_YWGY_SX_SXSJ sx JOIN T_YWGY_SX_HZSJ ywb ON sx.C_BH_HZSJ = ywb.C_BH JOIN T_QT_AJ aj ON ywb.C_BH_BS = aj.C_BH  where aj.DT_SASJ >= '2017-06-01 00:00:00' AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  sx.N_LB != 4 AND  aj.N_YWLX IN (20901,31001,40501,50306,50301,60305,60309) AND  ywb.N_LB = 2",
+  "targetDB":"select count(*) as data_count from sx.T_SX_SXSJ  where dt_cjsj<'2020-12-05' AND C_LB = '2'"
+}
+2020-12-28 09:31:34,064 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:31:34,064 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:34,064 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:34,078 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"其他审限事件-sx",
+  "c_source_bm":"T_YWGY_SX_SXSJ",
+  "c_source_dzdm":"sjlb",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LB",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_SXSJ",
+  "c_target_dzdm":"11401228",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_LB",
+  "lx":"Single"
+}
+2020-12-28 09:31:34,078 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_YWGY_SX_SXSJ sx JOIN T_YWGY_SX_HZSJ ywb ON sx.C_BH_HZSJ = ywb.C_BH JOIN T_QT_AJ aj ON ywb.C_BH_BS = aj.C_BH  where aj.DT_SASJ >= '2017-06-01 00:00:00' AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  sx.N_LB != 4 AND  aj.N_YWLX IN (20901,31001,40501,50306,50301,60305,60309) AND  ywb.N_LB = 3",
+  "targetDB":"select count(*) as data_count from sx.T_SX_SXSJ  where dt_cjsj<'2020-12-05' AND C_LB = '3'"
+}
+2020-12-28 09:31:34,078 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:31:34,078 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:34,078 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:34,091 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"其他审限事件-sx",
+  "c_source_bm":"T_YWGY_SX_SXSJ",
+  "c_source_dzdm":"sjlb",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LB",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_SXSJ",
+  "c_target_dzdm":"11401228",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_LB",
+  "lx":"Single"
+}
+2020-12-28 09:31:34,091 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_YWGY_SX_SXSJ sx JOIN T_YWGY_SX_HZSJ ywb ON sx.C_BH_HZSJ = ywb.C_BH JOIN T_QT_AJ aj ON ywb.C_BH_BS = aj.C_BH  where aj.DT_SASJ >= '2017-06-01 00:00:00' AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  sx.N_LB != 4 AND  aj.N_YWLX IN (20901,31001,40501,50306,50301,60305,60309) AND  ywb.N_LB = 5",
+  "targetDB":"select count(*) as data_count from sx.T_SX_SXSJ  where dt_cjsj<'2020-12-05' AND C_LB = '5'"
+}
+2020-12-28 09:31:34,091 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:31:34,091 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:34,091 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:34,102 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"其他审限事件-sx",
+  "c_source_bm":"T_YWGY_SX_SXSJ",
+  "c_source_dzdm":"sjlb",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_LB",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_SXSJ",
+  "c_target_dzdm":"11401228",
+  "c_target_jtmz":" '5'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_LB",
+  "lx":"Single"
+}
+2020-12-28 09:31:34,102 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_YWGY_SX_SXSJ sx JOIN T_YWGY_SX_HZSJ ywb ON sx.C_BH_HZSJ = ywb.C_BH JOIN T_QT_AJ aj ON ywb.C_BH_BS = aj.C_BH  where aj.DT_SASJ >= '2017-06-01 00:00:00' AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  sx.N_LB != 4 AND  aj.N_YWLX IN (20901,31001,40501,50306,50301,60305,60309) AND  ywb.N_LB = 6",
+  "targetDB":"select count(*) as data_count from sx.T_SX_SXSJ  where dt_cjsj<'2020-12-05' AND C_LB = '4'"
+}
+2020-12-28 09:31:34,103 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'DT_SASJ'.
+
+2020-12-28 09:31:34,103 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:34,103 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,831 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"刑事重新计算-sx",
+  "c_source_bm":"T_XS_CXJSSX",
+  "c_source_dzdm":"10102119",
+  "c_source_jtmz":"4",
+  "c_source_ywlx":"20000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401489",
+  "c_target_jtmz":"5",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0207",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,832 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XS_CXJSSX AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX NOT IN (20801) AND aj.N_YWLX = 20000AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '2'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301' AND  C_CXJSSXSY = '3'"
+}
+2020-12-28 09:31:46,832 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,832 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,832 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,838 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"刑事重新计算-sx",
+  "c_source_bm":"T_XS_CXJSSX",
+  "c_source_dzdm":"10102119",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"20000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401489",
+  "c_target_jtmz":" '3'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0207",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,839 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XS_CXJSSX AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX NOT IN (20801) AND aj.N_YWLX = 20000AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '5'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301' AND  C_CXJSSXSY = '4'"
+}
+2020-12-28 09:31:46,839 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,839 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,839 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,847 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"刑事重新计算-sx",
+  "c_source_bm":"T_XS_CXJSSX",
+  "c_source_dzdm":"10102119",
+  "c_source_jtmz":" '5'",
+  "c_source_ywlx":"20000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401489",
+  "c_target_jtmz":" '4'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0207",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,847 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XS_CXJSSX AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX NOT IN (20801) AND aj.N_YWLX = 20000AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '3'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301' AND  C_CXJSSXSY = '1'"
+}
+2020-12-28 09:31:46,847 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,847 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,847 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,852 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"刑事重新计算-sx",
+  "c_source_bm":"T_XS_CXJSSX",
+  "c_source_dzdm":"10102119",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"20000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401489",
+  "c_target_jtmz":" '1'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0207",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,852 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XS_CXJSSX AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX NOT IN (20801) AND aj.N_YWLX = 20000AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '1'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301' AND  C_CXJSSXSY = '2'"
+}
+2020-12-28 09:31:46,852 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,853 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,853 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,859 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"刑事重新计算-sx",
+  "c_source_bm":"T_XS_CXJSSX",
+  "c_source_dzdm":"10102119",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"20000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401489",
+  "c_target_jtmz":" '2'",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0207",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,860 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_XS_CXJSSX AS ywb JOIN T_XS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX NOT IN (20801) AND aj.N_YWLX = 20000AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '4'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301' AND  C_CXJSSXSY = '5'"
+}
+2020-12-28 09:31:46,860 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,860 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,860 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:31:46,872 - root - DEBUG - 1 - {
+  "c_group":"审限",
+  "c_ms":"sx",
+  "c_sheet_mc":"再审审查重新计算-sx",
+  "c_source_bm":"T_ZSSC_CXJSSX",
+  "c_source_dzdm":"10101266",
+  "c_source_jtmz":"1",
+  "c_source_ywlx":"30000",
+  "c_source_zdm":"C_CXJSSXSY",
+  "c_system_type":"np",
+  "c_target_bm":"T_SX_CXJS",
+  "c_target_dzdm":"11401635",
+  "c_target_jtmz":"999001",
+  "c_target_sjlx":"VC",
+  "c_target_ywlx":"0306",
+  "c_target_zdm":"C_CXJSSXSY",
+  "lx":"more"
+}
+2020-12-28 09:31:46,872 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_ZSSC_CXJSSX AS ywb JOIN T_ZSSC_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX = 30000 AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX IN (20301,20302,20303,30301,30302,30303,40301,40302,40303,50103,50104,50105,50203,50206)AND  aj.N_YWLX NOT IN (100301,100302,100203) AND  ywb.C_CXJSSXSY = '1'",
+  "targetDB":"select count(*) as data_count from sx.T_SX_CXJS  where C_YWLX = '0207' AND C_YWLX = '0624'AND  C_YWLX = '0318'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0109'AND  C_YWLX = '0703'AND  C_YWLX = '0516'AND  C_YWLX = '0628'AND  C_YWLX = '0629'AND  C_YWLX = '0505'AND  C_YWLX = '0101'AND  C_YWLX = '0308'AND  C_YWLX = '0509'AND  C_YWLX = '0513'AND  C_YWLX = '0119'AND  C_YWLX = '0627'AND  C_YWLX = '0506'AND  C_YWLX = '0625'AND  C_YWLX = '0512'AND  C_YWLX = '0501'AND  C_YWLX = '0302'AND  C_YWLX = '0504'AND  C_YWLX = '0407'AND  C_YWLX = '0702'AND  C_YWLX = '0301'AND  C_YWLX = '0306' AND  C_CXJSSXSY = '999001'"
+}
+2020-12-28 09:31:46,873 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'C_CXJSSXSY'.
+
+2020-12-28 09:31:46,873 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:31:46,873 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

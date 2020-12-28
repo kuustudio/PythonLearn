@@ -1,0 +1,19 @@
+{"targetDB":{
+  "ip":"172.18.19.88",
+ "port":"6543",
+ "userid":"t3wh",
+"password":"t3wh@6789#JKL",
+"database":"DB_FY",
+"CommonWhere":["dt_cjsj<'2020-12-05'"]
+},
+"sourceDB":{
+  "ip":"172.18.17.186",
+ "port":"5000",
+ "userid":"npcx",
+"password":"qwer1234",
+"database":"YWST",
+"schema":"dbo",
+"CommonWhere":["aj.N_YWLX NOT IN (100301,100302,100203)","aj.DT_SASJ >= '2017-06-01 00:00:00'","aj.DT_SASJ <= '2020-10-01 23:59:59'"]
+}
+}
+

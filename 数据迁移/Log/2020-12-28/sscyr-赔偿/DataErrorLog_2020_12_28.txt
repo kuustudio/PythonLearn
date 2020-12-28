@@ -1,0 +1,112 @@
+2020-12-28 09:30:33,688 - root - DEBUG - 1 - {
+  "c_group":"sscyr-赔偿",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"赔偿法标当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10125030",
+  "c_source_jtmz":"4",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_RDZXCJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dzdm":"11400028",
+  "c_target_jtmz":"4",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZXCJ",
+  "lx":"Single"
+}
+2020-12-28 09:30:33,688 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DSR AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX IN (50401,50402,50403,50404,50405,50406,50500)  AND ywb.N_DSRLX in (1,2,3)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_RDZXCJ = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_SSCYR  where dt_cjsj<'2020-12-05'  AND C_ZXCJ = '{1}'"
+}
+2020-12-28 09:30:33,688 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_RDZXCJ'.
+
+2020-12-28 09:30:33,688 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:33,688 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:33,820 - root - DEBUG - 1 - {
+  "c_group":"sscyr-赔偿",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"赔偿法标当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10125030",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_RDZXCJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dzdm":"11400028",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZXCJ",
+  "lx":"Single"
+}
+2020-12-28 09:30:33,821 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DSR AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX IN (50401,50402,50403,50404,50405,50406,50500)  AND ywb.N_DSRLX in (1,2,3)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_RDZXCJ = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_SSCYR  where dt_cjsj<'2020-12-05'  AND C_ZXCJ = '{2}'"
+}
+2020-12-28 09:30:33,821 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_RDZXCJ'.
+
+2020-12-28 09:30:33,821 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:33,821 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:33,951 - root - DEBUG - 1 - {
+  "c_group":"sscyr-赔偿",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"赔偿法标当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10125030",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_RDZXCJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dzdm":"11400028",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZXCJ",
+  "lx":"Single"
+}
+2020-12-28 09:30:33,952 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DSR AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX IN (50401,50402,50403,50404,50405,50406,50500)  AND ywb.N_DSRLX in (1,2,3)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_RDZXCJ = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_SSCYR  where dt_cjsj<'2020-12-05'  AND C_ZXCJ = '{3}'"
+}
+2020-12-28 09:30:33,952 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_RDZXCJ'.
+
+2020-12-28 09:30:33,952 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:33,952 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================
+2020-12-28 09:30:34,084 - root - DEBUG - 1 - {
+  "c_group":"sscyr-赔偿",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"赔偿法标当事人诉讼参与人-sscyr",
+  "c_source_bm":"T_FB_DSR",
+  "c_source_dzdm":"10125030",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"all",
+  "c_source_zdm":"N_RDZXCJ",
+  "c_system_type":"np",
+  "c_target_bm":"T_SSCYR",
+  "c_target_dzdm":"11400028",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"all",
+  "c_target_zdm":"C_ZXCJ",
+  "lx":"Single"
+}
+2020-12-28 09:30:34,084 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_FB_DSR AS ywb JOIN T_FB_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where aj.N_YWLX IN (50401,50402,50403,50404,50405,50406,50500)  AND ywb.N_DSRLX in (1,2,3)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_RDZXCJ = 4",
+  "targetDB":"select count(*) as data_count from sscyr.T_SSCYR  where dt_cjsj<'2020-12-05'  AND C_ZXCJ = '{4}'"
+}
+2020-12-28 09:30:34,084 - root - INFO - 2 - com.sybase.jdbc3.jdbc.SybSQLException: Invalid column name 'N_RDZXCJ'.
+
+2020-12-28 09:30:34,084 - root - INFO - 2 - <class 'jaydebeapi.DatabaseError'>
+2020-12-28 09:30:34,084 - root - ERROR - 2 - 
+执行Sql失败 请检查上方数据
+==================================================

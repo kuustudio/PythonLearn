@@ -1,0 +1,110 @@
+2020-12-26 13:57:05,194 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{1}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '1',
+2020-12-26 13:57:05,194 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,194 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,204 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{2}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '2',
+2020-12-26 13:57:05,204 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,204 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,212 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{3}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '3',
+2020-12-26 13:57:05,212 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,212 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,224 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{5}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '5',
+2020-12-26 13:57:05,224 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,224 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,232 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{6}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '6',
+2020-12-26 13:57:05,232 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,232 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,240 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{7}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '7',
+2020-12-26 13:57:05,240 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,241 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,250 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{8}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '8',
+2020-12-26 13:57:05,250 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,250 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,257 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{255}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '255',
+2020-12-26 13:57:05,257 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,257 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,264 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWFS,码值 '{4}',NP表名T_AJGW_REGISTERED,字段名C_GWFS,码值 '4',
+2020-12-26 13:57:05,264 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,264 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,278 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWLX,码值 '2',NP表名T_AJGW_REGISTERED,字段名N_GWRLX,码值 2,
+2020-12-26 13:57:05,278 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,278 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,295 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWLX,码值 '1',NP表名T_AJGW_REGISTERED,字段名N_GWRLX,码值 1,
+2020-12-26 13:57:05,295 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,295 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,309 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '1',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 1,
+2020-12-26 13:57:05,309 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,309 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,318 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '2',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 2,
+2020-12-26 13:57:05,318 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,318 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,328 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '3',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 3,
+2020-12-26 13:57:05,328 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,328 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,335 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '4',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 4,
+2020-12-26 13:57:05,336 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,336 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,344 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '2',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 5,
+2020-12-26 13:57:05,344 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,345 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,355 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '3',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 6,
+2020-12-26 13:57:05,355 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,355 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,362 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWRSSJGCJ,码值 '4',NP表名T_AJGW_REGISTERED,字段名N_JG_LEVEL,码值 7,
+2020-12-26 13:57:05,362 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,362 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,380 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWXS,码值 '1',NP表名T_AJGW_REGISTERED,字段名N_GYXS,码值 1,
+2020-12-26 13:57:05,380 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,380 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,390 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWXS,码值 '2',NP表名T_AJGW_REGISTERED,字段名N_GYXS,码值 2,
+2020-12-26 13:57:05,390 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,390 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,398 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWXS,码值 '3',NP表名T_AJGW_REGISTERED,字段名N_GYXS,码值 3,
+2020-12-26 13:57:05,398 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,398 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================
+2020-12-26 13:57:05,411 - root - INFO - 2 - T3C表名T_LDGW_GWJL,字段名C_GWXS,码值 '255',NP表名T_AJGW_REGISTERED,字段名N_GYXS,码值 255,
+2020-12-26 13:57:05,411 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:05,411 - root - ERROR - 2 - 
+执行成功！！！！！
+==================================================

@@ -1,0 +1,378 @@
+2020-12-26 13:56:47,088 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,089 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{1}'"
+}
+2020-12-26 13:56:47,089 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为31,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,089 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,089 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为31,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:47,105 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,105 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{2}'"
+}
+2020-12-26 13:56:47,105 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为23,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,106 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,106 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为23,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:47,117 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,118 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{3}'"
+}
+2020-12-26 13:56:47,118 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为2,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,118 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,119 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为2,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:47,130 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 8",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{4}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,130 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 8",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{4}'"
+}
+2020-12-26 13:56:47,130 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为2,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,130 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,131 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为2,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:47,156 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,156 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 4",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{1}'"
+}
+2020-12-26 13:56:47,156 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为4,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,156 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,157 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为4,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:56:47,190 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10104210",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"10404",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400525",
+  "c_target_jtmz":" '{5}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0119",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:56:47,190 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX = 10404AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 7",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308' AND  C_YSSSDW = '{5}'"
+}
+2020-12-26 13:56:47,190 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为4,请检查生成Sql确定是否迁移问题
+2020-12-26 13:56:47,191 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:56:47,191 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为4,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,388 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 1",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,388 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 1",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{1}'"
+}
+2020-12-26 13:57:12,388 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为208,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,388 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,388 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为208,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,404 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 2",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,404 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 2",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{2}'"
+}
+2020-12-26 13:57:12,404 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为191,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,404 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,405 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为191,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,419 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 3",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,419 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 3",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{3}'"
+}
+2020-12-26 13:57:12,419 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为34,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,419 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,419 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为34,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,446 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 7",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{7}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,446 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 7",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{7}'"
+}
+2020-12-26 13:57:12,446 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为3,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,446 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,446 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为3,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,460 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 5",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{8}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,460 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 5",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{8}'"
+}
+2020-12-26 13:57:12,460 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,460 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,461 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,473 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 11",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{12}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,474 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 11",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{12}'"
+}
+2020-12-26 13:57:12,474 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为6,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,474 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,474 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为6,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,519 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 12",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{9}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,519 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 12",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{9}'"
+}
+2020-12-26 13:57:12,519 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,519 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,519 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:57:12,532 - root - DEBUG - 1 - {
+  "c_group":"sscyr-管辖",
+  "c_ms":"sscyr",
+  "c_sheet_mc":"管辖当事人-sscyr",
+  "c_source_bm":"T_GX_DSR",
+  "c_source_dzdm":"10103207",
+  "c_source_jtmz":" 4",
+  "c_source_ywlx":"10205",
+  "c_source_zdm":"N_YSSSDW",
+  "c_system_type":"np",
+  "c_target_bm":"T_GX_DSR",
+  "c_target_dzdm":"11400349",
+  "c_target_jtmz":" '{7}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0109",
+  "c_target_zdm":"C_YSSSDW",
+  "lx":"more"
+}
+2020-12-26 13:57:12,532 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_GX_DSR AS ywb JOIN T_GX_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_DSRLX in (1,2,3) AND aj.N_YWLX = 10205AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00' AND  ywb.N_YSSSDW = 4",
+  "targetDB":"select count(*) as data_count from sscyr.T_GX_DSR  where C_YWLX = '0301' AND C_YWLX = '0109'AND  C_YWLX = '0119'AND  C_YWLX = '0302'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0308'AND  C_YWLX = '0407' AND  C_YSSSDW = '{7}'"
+}
+2020-12-26 13:57:12,532 - root - INFO - 2 - T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+2020-12-26 13:57:12,532 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:57:12,532 - root - ERROR - 2 - 
+T3C.T_GX_DSR.C_YSSSDW数量为0,NP.T_GX_DSR.N_YSSSDW数量为1,请检查生成Sql确定是否迁移问题
+==================================================

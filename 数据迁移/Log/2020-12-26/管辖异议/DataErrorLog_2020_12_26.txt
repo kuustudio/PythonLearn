@@ -1,0 +1,108 @@
+2020-12-26 13:58:01,897 - root - DEBUG - 1 - {
+  "c_group":"管辖异议",
+  "c_ms":"gxyy",
+  "c_sheet_mc":"民事管辖异议-gxyy",
+  "c_source_bm":"T_MS_GXYY",
+  "c_source_dzdm":"10125014",
+  "c_source_jtmz":" '1'",
+  "c_source_ywlx":"30100",
+  "c_source_zdm":"C_GXYYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_GXYY",
+  "c_target_dzdm":"11401312",
+  "c_target_jtmz":" '{1}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0301",
+  "c_target_zdm":"C_GXYYLX",
+  "lx":"more"
+}
+2020-12-26 13:58:01,897 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_GXYY AS ywb JOIN T_MS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_GXWTLX in (3,4)  AND aj.N_YWLX NOT IN (30801,30802,30803,30900,90600,31004)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 30100 AND  ywb.C_GXYYLX = '1'",
+  "targetDB":"select count(*) as data_count from gxyy.T_GXYY  where C_YWLX = '0232' AND C_YWLX = '0516'AND  C_YWLX = '0310'AND  C_YWLX = '0311'AND  C_YWLX = '0219'AND  C_YWLX = '0513'AND  C_YWLX = '0105'AND  C_YWLX = '0230'AND  C_YWLX = '0207'AND  C_YWLX = '0333'AND  C_YWLX = '0106'AND  C_YWLX = '0112'AND  C_YWLX = '0629'AND  C_YWLX = '0323'AND  C_YWLX = '0501'AND  C_YWLX = '0231'AND  C_YWLX = '0117'AND  C_YWLX = '0506'AND  C_YWLX = '0401'AND  C_YWLX = '0302'AND  C_YWLX = '0107'AND  C_YWLX = '0220'AND  C_YWLX = '0628'AND  C_YWLX = '0312'AND  C_YWLX = '0229'AND  C_YWLX = '0301'AND  C_YWLX = '0330'AND  C_YWLX = '0222'AND  C_YWLX = '0504'AND  C_YWLX = '0512'AND  C_YWLX = '0627'AND  C_YWLX = '0328'AND  C_YWLX = '0624'AND  C_YWLX = '0108'AND  C_YWLX = '0505'AND  C_YWLX = '0326'AND  C_YWLX = '0329'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0103'AND  C_YWLX = '0306'AND  C_YWLX = '0307'AND  C_YWLX = '0625'AND  C_YWLX = '0109'AND  C_YWLX = '0208'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0702'AND  C_YWLX = '0319'AND  C_YWLX = '0102'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0116'AND  C_YWLX = '0217'AND  C_YWLX = '0703'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0407'AND  C_YWLX = '0101'AND  C_YWLX = '0221'AND  C_YWLX = '0118'AND  C_YWLX = '0110'AND  C_YWLX = '0119'AND  C_YWLX = '0318'AND  C_YWLX = '0211'AND  C_YWLX = '0320'AND  C_YWLX = '0325'AND  C_YWLX = '0114'AND  C_YWLX = '0113'AND  C_YWLX = '0509'AND  C_YWLX = '0308'AND  C_YWLX = '0316' AND  C_GXYYLX = '{1}'"
+}
+2020-12-26 13:58:01,897 - root - INFO - 2 - T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为198,请检查生成Sql确定是否迁移问题
+2020-12-26 13:58:01,897 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:58:01,897 - root - ERROR - 2 - 
+T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为198,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:58:01,922 - root - DEBUG - 1 - {
+  "c_group":"管辖异议",
+  "c_ms":"gxyy",
+  "c_sheet_mc":"民事管辖异议-gxyy",
+  "c_source_bm":"T_MS_GXYY",
+  "c_source_dzdm":"10125014",
+  "c_source_jtmz":" '2'",
+  "c_source_ywlx":"30100",
+  "c_source_zdm":"C_GXYYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_GXYY",
+  "c_target_dzdm":"11401312",
+  "c_target_jtmz":" '{2}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0301",
+  "c_target_zdm":"C_GXYYLX",
+  "lx":"more"
+}
+2020-12-26 13:58:01,922 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_GXYY AS ywb JOIN T_MS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_GXWTLX in (3,4)  AND aj.N_YWLX NOT IN (30801,30802,30803,30900,90600,31004)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 30100 AND  ywb.C_GXYYLX = '2'",
+  "targetDB":"select count(*) as data_count from gxyy.T_GXYY  where C_YWLX = '0232' AND C_YWLX = '0516'AND  C_YWLX = '0310'AND  C_YWLX = '0311'AND  C_YWLX = '0219'AND  C_YWLX = '0513'AND  C_YWLX = '0105'AND  C_YWLX = '0230'AND  C_YWLX = '0207'AND  C_YWLX = '0333'AND  C_YWLX = '0106'AND  C_YWLX = '0112'AND  C_YWLX = '0629'AND  C_YWLX = '0323'AND  C_YWLX = '0501'AND  C_YWLX = '0231'AND  C_YWLX = '0117'AND  C_YWLX = '0506'AND  C_YWLX = '0401'AND  C_YWLX = '0302'AND  C_YWLX = '0107'AND  C_YWLX = '0220'AND  C_YWLX = '0628'AND  C_YWLX = '0312'AND  C_YWLX = '0229'AND  C_YWLX = '0301'AND  C_YWLX = '0330'AND  C_YWLX = '0222'AND  C_YWLX = '0504'AND  C_YWLX = '0512'AND  C_YWLX = '0627'AND  C_YWLX = '0328'AND  C_YWLX = '0624'AND  C_YWLX = '0108'AND  C_YWLX = '0505'AND  C_YWLX = '0326'AND  C_YWLX = '0329'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0103'AND  C_YWLX = '0306'AND  C_YWLX = '0307'AND  C_YWLX = '0625'AND  C_YWLX = '0109'AND  C_YWLX = '0208'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0702'AND  C_YWLX = '0319'AND  C_YWLX = '0102'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0116'AND  C_YWLX = '0217'AND  C_YWLX = '0703'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0407'AND  C_YWLX = '0101'AND  C_YWLX = '0221'AND  C_YWLX = '0118'AND  C_YWLX = '0110'AND  C_YWLX = '0119'AND  C_YWLX = '0318'AND  C_YWLX = '0211'AND  C_YWLX = '0320'AND  C_YWLX = '0325'AND  C_YWLX = '0114'AND  C_YWLX = '0113'AND  C_YWLX = '0509'AND  C_YWLX = '0308'AND  C_YWLX = '0316' AND  C_GXYYLX = '{2}'"
+}
+2020-12-26 13:58:01,923 - root - INFO - 2 - T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为31,请检查生成Sql确定是否迁移问题
+2020-12-26 13:58:01,923 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:58:01,923 - root - ERROR - 2 - 
+T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为31,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:58:01,941 - root - DEBUG - 1 - {
+  "c_group":"管辖异议",
+  "c_ms":"gxyy",
+  "c_sheet_mc":"民事管辖异议-gxyy",
+  "c_source_bm":"T_MS_GXYY",
+  "c_source_dzdm":"10125014",
+  "c_source_jtmz":" '3'",
+  "c_source_ywlx":"30100",
+  "c_source_zdm":"C_GXYYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_GXYY",
+  "c_target_dzdm":"11401312",
+  "c_target_jtmz":" '{3}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0301",
+  "c_target_zdm":"C_GXYYLX",
+  "lx":"more"
+}
+2020-12-26 13:58:01,941 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_GXYY AS ywb JOIN T_MS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_GXWTLX in (3,4)  AND aj.N_YWLX NOT IN (30801,30802,30803,30900,90600,31004)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 30100 AND  ywb.C_GXYYLX = '3'",
+  "targetDB":"select count(*) as data_count from gxyy.T_GXYY  where C_YWLX = '0232' AND C_YWLX = '0516'AND  C_YWLX = '0310'AND  C_YWLX = '0311'AND  C_YWLX = '0219'AND  C_YWLX = '0513'AND  C_YWLX = '0105'AND  C_YWLX = '0230'AND  C_YWLX = '0207'AND  C_YWLX = '0333'AND  C_YWLX = '0106'AND  C_YWLX = '0112'AND  C_YWLX = '0629'AND  C_YWLX = '0323'AND  C_YWLX = '0501'AND  C_YWLX = '0231'AND  C_YWLX = '0117'AND  C_YWLX = '0506'AND  C_YWLX = '0401'AND  C_YWLX = '0302'AND  C_YWLX = '0107'AND  C_YWLX = '0220'AND  C_YWLX = '0628'AND  C_YWLX = '0312'AND  C_YWLX = '0229'AND  C_YWLX = '0301'AND  C_YWLX = '0330'AND  C_YWLX = '0222'AND  C_YWLX = '0504'AND  C_YWLX = '0512'AND  C_YWLX = '0627'AND  C_YWLX = '0328'AND  C_YWLX = '0624'AND  C_YWLX = '0108'AND  C_YWLX = '0505'AND  C_YWLX = '0326'AND  C_YWLX = '0329'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0103'AND  C_YWLX = '0306'AND  C_YWLX = '0307'AND  C_YWLX = '0625'AND  C_YWLX = '0109'AND  C_YWLX = '0208'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0702'AND  C_YWLX = '0319'AND  C_YWLX = '0102'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0116'AND  C_YWLX = '0217'AND  C_YWLX = '0703'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0407'AND  C_YWLX = '0101'AND  C_YWLX = '0221'AND  C_YWLX = '0118'AND  C_YWLX = '0110'AND  C_YWLX = '0119'AND  C_YWLX = '0318'AND  C_YWLX = '0211'AND  C_YWLX = '0320'AND  C_YWLX = '0325'AND  C_YWLX = '0114'AND  C_YWLX = '0113'AND  C_YWLX = '0509'AND  C_YWLX = '0308'AND  C_YWLX = '0316' AND  C_GXYYLX = '{3}'"
+}
+2020-12-26 13:58:01,942 - root - INFO - 2 - T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为2,请检查生成Sql确定是否迁移问题
+2020-12-26 13:58:01,942 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:58:01,942 - root - ERROR - 2 - 
+T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为2,请检查生成Sql确定是否迁移问题
+==================================================
+2020-12-26 13:58:01,961 - root - DEBUG - 1 - {
+  "c_group":"管辖异议",
+  "c_ms":"gxyy",
+  "c_sheet_mc":"民事管辖异议-gxyy",
+  "c_source_bm":"T_MS_GXYY",
+  "c_source_dzdm":"10125014",
+  "c_source_jtmz":" '4'",
+  "c_source_ywlx":"30100",
+  "c_source_zdm":"C_GXYYLX",
+  "c_system_type":"np",
+  "c_target_bm":"T_GXYY",
+  "c_target_dzdm":"11401312",
+  "c_target_jtmz":" '{4}'",
+  "c_target_sjlx":"_varchar",
+  "c_target_ywlx":"0301",
+  "c_target_zdm":"C_GXYYLX",
+  "lx":"more"
+}
+2020-12-26 13:58:01,962 - root - DEBUG - 1 - {
+  "sourceDB":"select count(*) as data_count from  T_MS_GXYY AS ywb JOIN T_MS_AJ AS aj ON ywb.C_BH_AJ = aj.C_BH  where ywb.N_GXWTLX in (3,4)  AND aj.N_YWLX NOT IN (30801,30802,30803,30900,90600,31004)AND  aj.DT_SASJ <= '2020-10-01 23:59:59'AND  aj.N_YWLX NOT IN (100301,100302,100203)AND  aj.DT_SASJ >= '2017-06-01 00:00:00'AND  aj.N_YWLX = 30100 AND  ywb.C_GXYYLX = '4'",
+  "targetDB":"select count(*) as data_count from gxyy.T_GXYY  where C_YWLX = '0232' AND C_YWLX = '0516'AND  C_YWLX = '0310'AND  C_YWLX = '0311'AND  C_YWLX = '0219'AND  C_YWLX = '0513'AND  C_YWLX = '0105'AND  C_YWLX = '0230'AND  C_YWLX = '0207'AND  C_YWLX = '0333'AND  C_YWLX = '0106'AND  C_YWLX = '0112'AND  C_YWLX = '0629'AND  C_YWLX = '0323'AND  C_YWLX = '0501'AND  C_YWLX = '0231'AND  C_YWLX = '0117'AND  C_YWLX = '0506'AND  C_YWLX = '0401'AND  C_YWLX = '0302'AND  C_YWLX = '0107'AND  C_YWLX = '0220'AND  C_YWLX = '0628'AND  C_YWLX = '0312'AND  C_YWLX = '0229'AND  C_YWLX = '0301'AND  C_YWLX = '0330'AND  C_YWLX = '0222'AND  C_YWLX = '0504'AND  C_YWLX = '0512'AND  C_YWLX = '0627'AND  C_YWLX = '0328'AND  C_YWLX = '0624'AND  C_YWLX = '0108'AND  C_YWLX = '0505'AND  C_YWLX = '0326'AND  C_YWLX = '0329'AND  C_YWLX = '0313'AND  C_YWLX = '0321'AND  C_YWLX = '0103'AND  C_YWLX = '0306'AND  C_YWLX = '0307'AND  C_YWLX = '0625'AND  C_YWLX = '0109'AND  C_YWLX = '0208'AND  C_YWLX = '0212'AND  C_YWLX = '0317'AND  C_YWLX = '0702'AND  C_YWLX = '0319'AND  C_YWLX = '0102'AND  C_YWLX = '0315'AND  C_YWLX = '0322'AND  C_YWLX = '0116'AND  C_YWLX = '0217'AND  C_YWLX = '0703'AND  dt_cjsj<'2020-12-05'AND  C_YWLX = '0407'AND  C_YWLX = '0101'AND  C_YWLX = '0221'AND  C_YWLX = '0118'AND  C_YWLX = '0110'AND  C_YWLX = '0119'AND  C_YWLX = '0318'AND  C_YWLX = '0211'AND  C_YWLX = '0320'AND  C_YWLX = '0325'AND  C_YWLX = '0114'AND  C_YWLX = '0113'AND  C_YWLX = '0509'AND  C_YWLX = '0308'AND  C_YWLX = '0316' AND  C_GXYYLX = '{4}'"
+}
+2020-12-26 13:58:01,962 - root - INFO - 2 - T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为6,请检查生成Sql确定是否迁移问题
+2020-12-26 13:58:01,962 - root - INFO - 2 - <class 'ValueError'>
+2020-12-26 13:58:01,962 - root - ERROR - 2 - 
+T3C.T_GXYY.C_GXYYLX数量为0,NP.T_MS_GXYY.C_GXYYLX数量为6,请检查生成Sql确定是否迁移问题
+==================================================
