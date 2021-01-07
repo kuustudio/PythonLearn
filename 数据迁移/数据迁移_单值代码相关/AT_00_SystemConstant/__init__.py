@@ -2,6 +2,7 @@ import time
 
 
 class SystemConstant(object):
+    ywlx_map = None
     ClassErrorMessage = '调用属性异常'
     FatherDirFlag = ".."
     DirSpiltFlag = "\\"

@@ -22,6 +22,7 @@ class ProcessDataServer(object):
         self.field_value_list = field_value_list
         self.code_value_list = code_value_list
         self.get_case_type_list()
+        SystemConstant.ywlx_map = self.case_type_list_reverse
 
     def __getattr__(self, item):
         return SystemConstant.ClassErrorMessage
@@ -55,10 +56,15 @@ class ProcessDataServer(object):
 
     def get_case_type_list(self):
         self.case_type_list = {}
+        self.case_type_list_reverse = {}
         for i in self.code_value_list:
             if i[self.ProcessConstantsMark.SourceCodeType] == self.ProcessConstantsMark.SourceYwlxCodeType:
+                self.case_type_list_reverse .update({i[self.ProcessConstantsMark.SourceCode]:
+                                                i[self.ProcessConstantsMark.TargetCode]})
                 self.case_type_list.update({i[self.ProcessConstantsMark.TargetCode]:
                                                 i[self.ProcessConstantsMark.SourceCode]})
+
+
 
 
 class HandleSingleValue(ProcessDataServer):

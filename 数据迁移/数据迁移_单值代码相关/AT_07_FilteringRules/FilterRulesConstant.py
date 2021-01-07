@@ -10,4 +10,4 @@
 class RuleConstant(object):
 
     NotNull = "不为空"
-    field_list_filter_map = {"c_ms": "ws","c_target_dmlx":"ay","c_target_zhl": NotNull}
+    field_list_filter_map = {"c_ms": ["ws","ys"],"c_target_dmlx":["ay"],"c_target_zhl": [NotNull]}

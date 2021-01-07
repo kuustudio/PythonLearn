@@ -21,8 +21,9 @@ class FilterDataServer(object):
     def main(self):
         for i in self.rule.keys():
             key = i
-            value = self.rule[i]
-            self.filter_data(key,value)
+            value_list = self.rule[i]
+            for value in value_list:
+                self.filter_data(key,value)
         return self.data
 
     def filter_data(self, key, value):

@@ -44,10 +44,12 @@ class OperaClassApplication(object):
             a = []
             for i in More:
                 if len(i)>1:
-                    if i[0]['c_sheet_mc'] == '刑事其它结案信息-xsaj' and i[0]['c_target_zdm'] == 'C_JAFS' :
+                    if i[0]['c_sheet_mc'] == '审判组织成员人民陪审员-spzzcy' and i[0]['c_target_zdm'] == 'C_XB' :
                         a.append(i)
             print(a)
             exit()
+
+
 
             SwitchSql = SQLServer.GetSql(More, self.DB_info, TargetDBConstant.Constant.ExecuteSqlMark)
             SwitchSql.main()
