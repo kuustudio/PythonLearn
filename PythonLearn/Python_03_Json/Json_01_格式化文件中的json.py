@@ -48,4 +48,4 @@ if __name__ == '__main__':
     c = a.get_content()
     print(type(c))
     b = a.get_json_to_str()
-    print(type(b))
+    print(b)    

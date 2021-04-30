@@ -13,4 +13,4 @@ class RequestMethod(object):
     def send_get(self, data):
         res = requests.get(self.url, self.data)
         if res.status_code =='200':
-            response = json.
+            response = json.dumps()
